@@ -5,7 +5,7 @@ from .models import Verb, OtherTime
 
 
 class VerbAdmin(admin.ModelAdmin):
-    list_display = ('present', 'category',)
+    list_display = ('id','present', 'category',)
 
 admin.site.register(Verb, VerbAdmin)
 

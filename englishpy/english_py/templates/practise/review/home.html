@@ -1,10 +1,97 @@
-<!DOCTYPE html>
+{% load static %}<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
 </head>
 <body>
-<h1>Edwin didier mendez rojas</h1>
+<h1>- English -</h1>
+
+   <textarea id="tes"></textarea>
+
+
+    {{ form.as_p }}
+
+    <button id="load">load</button>
+    <button id="show">Show hidden fields</button>
+
+
+    <input id="present" name="" type="hidden" value="">
+    <input id="past" name="" type="hidden" value="">
+    <input id="past_praticiple" name="" type="hidden" value="">
+    <input id="group" name="" type="hidden" value="">
+
+    <input id="finished_routine" name="" type="hidden" value="">
+
 </body>
+
+
+
+<script src="{% static 'eg/js/jquery-3.1.1.min.js' %}"></script>
+<script>
+
+
+    $("#id_present").change(function () {
+        var present = $('#id_present').val();
+        var present_hidden = $('#present').val();
+        if(present == present_hidden ){
+            if($('#finished_routine').val() != 'true'){
+                next_verb();
+            } else {
+                alert('Haz finalizado la rutina ');
+            }
+        }
+    });
+
+    $("#load").click(function(){
+
+       if($('#finished_routine').val() != 'true'){
+           next_verb();
+       } else {
+           alert('Haz finalizado la rutina ');
+       }
+
+
+    });
+
+
+
+    $("#show").click(function(){
+        alert($('#present').val());
+    });
+
+    function next_verb(){
+
+
+      $.ajax({
+        type: 'GET',
+        url: 'next_verb',
+        dataType: 'json',
+        data:{'hi': $('#group').val()},
+        success: function (data) {
+          $('#present').val(data.present);
+          $('#tes').val(data.present);
+
+          var id = [];
+
+
+            if($('#group').val()){
+              id.push($('#group').val());
+              id.push(data.id);
+              $('#group').val(id);
+            } else {
+              id.push(data.id);
+              $('#group').val(id);
+            }
+            alert($('#group').val());
+            $('#finished_routine').val(data.finished_routine);
+
+
+        }
+      });
+    }
+
+
+</script>
+
 </html>
