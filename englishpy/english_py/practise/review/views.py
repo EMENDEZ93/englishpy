@@ -40,4 +40,12 @@ def next_verb(request):
 
     data['present'] = verb.present
 
+    print('**************************************')
+    print(verb.past())
+
+
     return JsonResponse(data)
+
+
+
+
