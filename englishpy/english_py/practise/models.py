@@ -15,7 +15,7 @@ class Verb(models.Model):
         return self.present
 
     def past(self):
-        past = OtherTime.objects.filter(present__present=self.present, time=TimesTypes.PAST)
+        past = OtherTime.objects.get(present__present=self.present, time=TimesTypes.PAST)
         return past
 
 class OtherTime(models.Model):

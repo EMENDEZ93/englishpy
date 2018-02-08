@@ -70,7 +70,7 @@
         data:{'hi': $('#group').val()},
         success: function (data) {
           $('#present').val(data.present);
-          $('#tes').val(data.present);
+          $('#tes').val(data.present + ' : ' + data.past );
 
           var id = [];
 
