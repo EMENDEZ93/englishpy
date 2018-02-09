@@ -1,13 +1,13 @@
 from django.shortcuts import render, get_object_or_404
 from .forms import VerbForm
-from ..models import Verb
+from ..models import Present
 from django.http import JsonResponse
 from random import randint
 
 
 def home(request, template_name='practise/review/home.html'):
     data = {}
-    data['verb'] = Verb.objects.all()
+    data['verb'] = Present.objects.all()
     data['form'] = VerbForm()
     return render(request, template_name, data)
 
@@ -24,7 +24,7 @@ def next_verb(request):
                 id_used_list.append(int(i))
 
 
-    id_prefer_user =[ i.id for i in Verb.objects.all()]
+    id_prefer_user =[ i.id for i in Present.objects.all()]
 
 
     if len(id_used_list) != len(id_prefer_user):
@@ -36,11 +36,11 @@ def next_verb(request):
     else:
         data['finished_routine'] = True
 
-    verb = get_object_or_404(Verb,pk=id_prefer_user[next_id])
+    verb = get_object_or_404(Present,pk=id_prefer_user[next_id])
 
-    data['present'] = verb.present
-    data['past'] = verb.past()
-    data['past_participle'] = verb.past_participle()
+    data['present'] = str(verb.verb)
+    data['past'] = str(verb.past())
+    data['past_participle'] = str(verb.past_participle())
 
     print('**************************************')
     print(verb.past())

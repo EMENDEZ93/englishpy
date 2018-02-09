@@ -1,16 +1,22 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 from django.contrib import admin
-from .models import Verb, OtherTime
+from .models import Present, PastParticiple, Past
 
 
-class VerbAdmin(admin.ModelAdmin):
-    list_display = ('id','present', 'category',)
+class PresentAdmin(admin.ModelAdmin):
+    list_display = ('verb', 'category',)
 
-admin.site.register(Verb, VerbAdmin)
+admin.site.register(Present, PresentAdmin)
 
 
-class OtherTimeAdmin(admin.ModelAdmin):
-    list_display = ('verb', 'time', 'present',)
+class PastAdmin(admin.ModelAdmin):
+    list_display = ('verb', 'present',)
 
-admin.site.register(OtherTime, OtherTimeAdmin)
+admin.site.register(Past, PastAdmin)
+
+
+class PastParticipleAdmin(admin.ModelAdmin):
+    list_display = ('verb', 'present',)
+
+admin.site.register(PastParticiple, PastParticipleAdmin)

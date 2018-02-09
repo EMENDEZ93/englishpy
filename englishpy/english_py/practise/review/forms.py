@@ -1,9 +1,9 @@
 from django import forms
 
-from ..models import Verb
+from ..models import Present
 
 
 class VerbForm(forms.ModelForm):
     class Meta:
-        model = Verb
-        fields = ('present',)
+        model = Present
+        fields = ('verb',)

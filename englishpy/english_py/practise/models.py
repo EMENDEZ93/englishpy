@@ -7,26 +7,34 @@ from django.db import models
 from types import VerbTypes, TimesTypes
 
 
-class Verb(models.Model):
-    present = models.CharField(_('Present'), max_length=255)
-    category = models.CharField(_('Type'),max_length=255, choices=VerbTypes.TYPES, default=VerbTypes.REGULAR)
+class Present(models.Model):
+    verb = models.CharField(_('Present'), max_length=255, unique=True)
+    category = models.CharField(_('Type'),max_length=255, default=VerbTypes.REGULAR)
 
     def __str__(self):
-        return self.present
+        return self.verb
 
     def past(self):
-        past = OtherTime.objects.get(present__present=self.present, time=TimesTypes.PAST)
+        past = Past.objects.get(present=self)
         return str(past)
 
     def past_participle(self):
-        past_participle = OtherTime.objects.get(present__present=self.present, time=TimesTypes.PAST_PARTICIPLE)
-        return str(past_participle)
+        past_participle = PastParticiple.objects.get(present=self)
+        return str(past_participle.verb)
 
 
-class OtherTime(models.Model):
-    verb = models.CharField(_('Present'), max_length=255)
-    time = models.CharField(_('Time'),max_length=255, choices=TimesTypes.TYPES, default=TimesTypes.PAST)
-    present = models.ForeignKey(Verb, verbose_name=_('Present'))
+
+class Past(models.Model):
+    verb = models.CharField(_('past'), max_length=255, unique=True)
+    present = models.ForeignKey(Present, verbose_name=_('Present'))
+
+    def __str__(self):
+        return self.verb
+
+
+class PastParticiple(models.Model):
+    verb = models.CharField(_('past_participle'), max_length=255, unique=True)
+    present = models.ForeignKey(Present, verbose_name=_('Present'))
 
     def __str__(self):
         return self.verb

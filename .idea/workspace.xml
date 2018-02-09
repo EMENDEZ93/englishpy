@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88d9f733-71b0-47ea-be76-8d66b310f4a2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/englishpy/english_py/practise/admin.py" afterPath="$PROJECT_DIR$/englishpy/english_py/practise/admin.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/englishpy/english_py/practise/models.py" afterPath="$PROJECT_DIR$/englishpy/english_py/practise/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/englishpy/english_py/practise/reload/views.py" afterPath="$PROJECT_DIR$/englishpy/english_py/practise/reload/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/englishpy/english_py/practise/review/forms.py" afterPath="$PROJECT_DIR$/englishpy/english_py/practise/review/forms.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/englishpy/english_py/practise/review/views.py" afterPath="$PROJECT_DIR$/englishpy/english_py/practise/review/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/englishpy/english_py/templates/practise/review/home.html" afterPath="$PROJECT_DIR$/englishpy/english_py/templates/practise/review/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/englishpy/english_py/practise/types.py" afterPath="$PROJECT_DIR$/englishpy/english_py/practise/types.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,20 +25,28 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/review/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#54#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="26">
+              <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/models.py">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/reload/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="22" column="35" lean-forward="false" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+            <state relative-caret-position="39">
+              <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding>
                 <element signature="e#24#63#0" expanded="true" />
               </folding>
@@ -44,12 +54,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/englishpy/english_py/templates/practise/review/home.html">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="72" column="87" lean-forward="false" selection-start-line="72" selection-start-column="87" selection-end-line="72" selection-end-column="87" />
-              <folding />
+            <state relative-caret-position="436">
+              <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+              <folding>
+                <element signature="e#24#63#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -57,8 +69,18 @@
       <file leaf-file-name="types.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/types.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="13" column="16" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="16" />
+            <state relative-caret-position="130">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/englishpy/english_py/templates/practise/review/home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -67,8 +89,8 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+            <state relative-caret-position="208">
+              <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -79,8 +101,8 @@
       <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/review/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="26" />
+            <state relative-caret-position="52">
+              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -105,6 +127,7 @@
       <find>id</find>
       <find>tes</find>
       <find>past</find>
+      <find>Verb</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -119,23 +142,23 @@
         <option value="$PROJECT_DIR$/englishpy/english_py/practise/apps.py" />
         <option value="$PROJECT_DIR$/englishpy/englishpy/urls.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/englishpy/english_py/practise/types.py" />
         <option value="$PROJECT_DIR$/englishpy/english_py/templates/practise/home.html" />
         <option value="$PROJECT_DIR$/englishpy/english_py/practise/views.py" />
         <option value="$PROJECT_DIR$/englishpy/english_py/practise/review/re.py" />
         <option value="$PROJECT_DIR$/englishpy/englishpy/settings.py" />
-        <option value="$PROJECT_DIR$/englishpy/english_py/practise/review/forms.py" />
-        <option value="$PROJECT_DIR$/englishpy/english_py/practise/admin.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/englishpy/english_py/templates/practise/review/xlsx.html" />
         <option value="$PROJECT_DIR$/englishpy/english_py/templates/xlsx.html" />
         <option value="$PROJECT_DIR$/englishpy/english_py/templates/all_delete.html" />
         <option value="$PROJECT_DIR$/englishpy/english_py/templates/other_time.html" />
         <option value="$PROJECT_DIR$/englishpy/english_py/practise/urls.py" />
+        <option value="$PROJECT_DIR$/englishpy/english_py/templates/practise/review/home.html" />
+        <option value="$PROJECT_DIR$/englishpy/english_py/practise/types.py" />
+        <option value="$PROJECT_DIR$/englishpy/english_py/practise/admin.py" />
+        <option value="$PROJECT_DIR$/englishpy/english_py/practise/review/forms.py" />
+        <option value="$PROJECT_DIR$/englishpy/english_py/practise/review/views.py" />
         <option value="$PROJECT_DIR$/englishpy/english_py/practise/reload/views.py" />
         <option value="$PROJECT_DIR$/englishpy/english_py/practise/models.py" />
-        <option value="$PROJECT_DIR$/englishpy/english_py/practise/review/views.py" />
-        <option value="$PROJECT_DIR$/englishpy/english_py/templates/practise/review/home.html" />
       </list>
     </option>
   </component>
@@ -315,6 +338,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="review" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="englishpy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="englishpy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="englishpy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="english_py" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="practise" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reload" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -524,8 +573,12 @@
           <url>file://$PROJECT_DIR$/englishpy/website/views.py</url>
           <line>1</line>
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/englishpy/english_py/practise/reload/views.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -698,13 +751,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="7" column="23" lean-forward="false" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/reload/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -723,16 +769,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
           <caret line="58" column="63" lean-forward="true" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/review/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -757,24 +793,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/types.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="13" column="16" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26">
@@ -782,38 +800,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/reload/views.py">
+    <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="22" column="35" lean-forward="false" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+        <state relative-caret-position="208">
+          <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
           <folding>
-            <element signature="e#24#63#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/review/views.py">
+    <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/review/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+        <state relative-caret-position="52">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
-            <element signature="e#0#54#0" expanded="true" />
+            <element signature="e#0#24#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/englishpy/english_py/templates/practise/review/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="72" column="87" lean-forward="false" selection-start-line="72" selection-start-column="87" selection-end-line="72" selection-end-column="87" />
+        <state relative-caret-position="130">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/review/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/reload/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/types.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#63#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
