@@ -16,7 +16,12 @@ class Verb(models.Model):
 
     def past(self):
         past = OtherTime.objects.get(present__present=self.present, time=TimesTypes.PAST)
-        return past
+        return str(past)
+
+    def past_participle(self):
+        past_participle = OtherTime.objects.get(present__present=self.present, time=TimesTypes.PAST_PARTICIPLE)
+        return str(past_participle)
+
 
 class OtherTime(models.Model):
     verb = models.CharField(_('Present'), max_length=255)

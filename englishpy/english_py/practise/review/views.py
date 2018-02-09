@@ -39,7 +39,9 @@ def next_verb(request):
     verb = get_object_or_404(Verb,pk=id_prefer_user[next_id])
 
     data['present'] = verb.present
-    data['past'] = str(verb.past())
+    data['past'] = verb.past()
+    data['past_participle'] = verb.past_participle()
+
     print('**************************************')
     print(verb.past())
 
