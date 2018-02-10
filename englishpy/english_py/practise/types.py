@@ -16,3 +16,12 @@ class TimesTypes():
         (PAST , PAST ),
         (PAST_PARTICIPLE , PAST_PARTICIPLE ),
     )
+
+
+class TopicTypes():
+    DEFAULT = '--------------------'
+    VERBS = 'VERBS'
+    TYPES = (
+        (VERBS, VERBS),
+        (DEFAULT, DEFAULT),
+    )
