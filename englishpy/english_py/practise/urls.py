@@ -1,6 +1,10 @@
 from django.conf.urls import url, include
+
+from load_topic.views import topic, topic_delete
 from review.views import home, next_verb
 from reload.views import reload, delete_all_verb, reload_other_time, delete_all_other
+
+
 urlpatterns = [
     url(
         regex=r'^home$',
@@ -31,6 +35,18 @@ urlpatterns = [
         regex=r'^delete_other$',
         view=delete_all_other,
         name='delete_all_other'
+    ),
+
+
+    url(
+        regex=r'^topic/(?P<id_topic>\d+)$',
+        view=topic,
+        name='topic'
+    ),
+    url(
+        regex=r'^topic/(?P<id_topic>\d+)/vaciar$',
+        view=topic_delete,
+        name='topic_delete'
     ),
 
 ]

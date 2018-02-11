@@ -29,7 +29,7 @@ admin.site.register(Routine, RoutineAdmin)
 
 
 class TopicAdmin(admin.ModelAdmin):
-    list_display = ('name', 'routine')
+    list_display = ('id', 'name', 'routine')
 
 admin.site.register(Topic, TopicAdmin)
 
