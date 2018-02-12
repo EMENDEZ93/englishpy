@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
 from django.shortcuts import render
 
-from .models import Verb
-
-def home(request, template_name='practise/review/home.html'):
-    ver = Verb()
+def searcher(request, template_name='searcher.html'):
     return render(request, template_name)
