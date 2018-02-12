@@ -10,7 +10,7 @@
    <textarea id="tes"></textarea>
 
 
-    {{ form.as_p }}
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
 
     <button id="load">load</button>
     <button id="show">Show hidden fields</button>
@@ -31,17 +31,17 @@
 <script>
 
 
-    $("#id_present").change(function () {
-        var present = $('#id_present').val();
-        var present_hidden = $('#present').val();
-        if(present == present_hidden ){
-            if($('#finished_routine').val() != 'true'){
-                next_verb();
-            } else {
-                alert('Haz finalizado la rutina ');
-            }
-        }
-    });
+    //$("#id_present").change(function () {
+    //    var present = $('#id_present').val();
+    //    var present_hidden = $('#present').val();
+    //    if(present == present_hidden ){
+    //        if($('#finished_routine').val() != 'true'){
+    //            next_verb();
+    //        } else {
+    //            alert('Haz finalizado la rutina ');
+    //        }
+    //    }
+    //});
 
     $("#load").click(function(){
 
@@ -83,7 +83,7 @@
               id.push(data.id);
               $('#group').val(id);
             }
-            alert($('#group').val());
+            //alert($('#group').val());
             $('#finished_routine').val(data.finished_routine);
 
 
@@ -91,6 +91,17 @@
       });
     }
 
+
+    function myFunction() {
+        var input, verb;
+        input = document.getElementById("myInput");
+        verb = document.getElementById("present");
+
+        if(input.value.toUpperCase() == verb.value.toUpperCase()){
+            $('#myInput').val('');
+            next_verb();
+        }
+    }
 
 </script>
 
