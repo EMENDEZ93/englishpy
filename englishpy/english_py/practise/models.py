@@ -16,11 +16,18 @@ class Present(models.Model):
 
     def past(self):
         past = Past.objects.get(present=self)
-        return str(past)
+        return past.past_object()
 
     def past_participle(self):
         past_participle = PastParticiple.objects.get(present=self)
-        return str(past_participle.verb)
+        return past_participle.past_participle_object()
+
+    def present_object(self):
+        data = {
+            'verb':self.verb,
+            'audio':'english/verb/present/{}'.format(self.verb)
+        }
+        return data
 
 
 class Past(models.Model):
@@ -30,6 +37,13 @@ class Past(models.Model):
     def __str__(self):
         return self.verb
 
+    def past_object(self):
+        data = {
+            'verb':self.verb,
+            'audio':'english/verb/past/{}'.format(self.verb)
+        }
+        return data
+
 
 class PastParticiple(models.Model):
     verb = models.CharField(_('Past participle'), max_length=255, unique=True)
@@ -37,6 +51,14 @@ class PastParticiple(models.Model):
 
     def __str__(self):
         return self.verb
+
+    def past_participle_object(self):
+        data = {
+            'verb':self.verb,
+            'audio':'english/verb/pastparticiple/{}'.format(self.verb)
+        }
+        return data
+
 
 
 class Routine(models.Model):

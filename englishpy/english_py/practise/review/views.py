@@ -15,7 +15,7 @@ def home(request, template_name='practise/review/home.html'):
 
     print(settings.MEDIA_URL)
 
-    data['audio'] = 'media/translate_tts.mp3'
+    data['audio'] = 'media/english/verb/present/work.mp3'
 
     return render(request, template_name, data)
 
@@ -45,14 +45,11 @@ def next_verb(request):
         data['finished_routine'] = True
 
     verb = get_object_or_404(Present,pk=id_prefer_user[next_id])
-
-    data['present'] = str(verb.verb)
-    data['past'] = str(verb.past())
-    data['past_participle'] = str(verb.past_participle())
-
-    print('**************************************')
-    print(verb.past())
-
+    data = {
+        'present': verb.present_object(),
+        'past': verb.past(),
+        'past_participle':verb.past_participle()
+    }
 
     return JsonResponse(data)
 
