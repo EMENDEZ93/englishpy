@@ -9,6 +9,9 @@
 
    <textarea id="tes"></textarea>
 
+<audio id="myAudio">
+  <source src="{{audio}}" type="audio/mpeg">
+</audio>
 
     <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
 
@@ -100,8 +103,16 @@
         if(input.value.toUpperCase() == verb.value.toUpperCase()){
             $('#myInput').val('');
             next_verb();
+
+            var x = document.getElementById("myAudio"); 
+            x.play();
+
         }
     }
+
+
+
+
 
 </script>
 

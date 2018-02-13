@@ -4,16 +4,18 @@ from ..models import Present
 from django.http import JsonResponse
 from random import randint
 import os
+from django.conf import settings
+
 
 def home(request, template_name='practise/review/home.html'):
     data = {}
     data['verb'] = Present.objects.all()
     data['form'] = VerbForm()
 
-    current_main_folder = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    ruta = os.path.join(current_main_folder, 'review/translate_tts.mp3')
 
-    data['audio'] = ruta
+    print(settings.MEDIA_URL)
+
+    data['audio'] = 'media/translate_tts.mp3'
 
     return render(request, template_name, data)
 
