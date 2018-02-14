@@ -25,7 +25,7 @@ class Present(models.Model):
     def present_object(self):
         data = {
             'verb':self.verb,
-            'audio':'english/verb/present/{}'.format(self.verb)
+            'audio':'media/english/verb/present/{}.mp3'.format(self.verb)
         }
         return data
 
@@ -40,7 +40,7 @@ class Past(models.Model):
     def past_object(self):
         data = {
             'verb':self.verb,
-            'audio':'english/verb/past/{}'.format(self.verb)
+            'audio':'media/english/verb/past/{}.mp3'.format(self.verb)
         }
         return data
 
@@ -55,7 +55,7 @@ class PastParticiple(models.Model):
     def past_participle_object(self):
         data = {
             'verb':self.verb,
-            'audio':'english/verb/pastparticiple/{}'.format(self.verb)
+            'audio':'media/english/verb/past_participle/{}.mp3'.format(self.verb)
         }
         return data
 

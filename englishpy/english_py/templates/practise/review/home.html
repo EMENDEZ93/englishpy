@@ -9,9 +9,9 @@
 
    <textarea id="tes"></textarea>
 
-<audio id="myAudio">
-  <source src="{{audio}}" type="audio/mpeg">
-</audio>
+    <audio id="present_audio"><source id="present_source" src="" type="audio/mpeg"></audio>
+    <audio id="past_audio"><source id="past_source" src="" type="audio/mpeg"></audio>
+    <audio id="past_participle_audio"><source id="past_participle_source" src="" type="audio/mpeg"></audio>
 
     <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
 
@@ -60,12 +60,25 @@
         dataType: 'json',
         data:{'hi': $('#group').val()},
         success: function (data) {
+
           $('#present').val(data.present.verb);
+          $("#present_source").attr("src", data.present.audio).detach().appendTo("#present_audio");
+
+
+            var x = document.getElementById("present_audio");
+            x.play();
+
+
           $('#past').val(data.past.verb);
+          $("#past_source").attr("src", data.past.audio).detach().appendTo("#past_audio");
+
+
           $('#past_participle').val(data.past_participle.verb);
+          $("#past_participle_source").attr("src", data.past_participle.audio).detach().appendTo("#past_participle_audio");
 
 
           $('#tes').val(data.present.verb + ' : ' + data.past.verb + ' : ' + data.past_participle.verb );
+
 
           var id = [];
 
@@ -99,9 +112,8 @@
         if( pivot.value == '0' && input.value.toUpperCase() == verb.value.toUpperCase()){
             $('#pivot').val('1');
             $('#myInput').val('');
-            alert($('#past_participle').val());
 
-            var x = document.getElementById("myAudio");
+            var x = document.getElementById("past_audio");
             x.play();
 
         }
@@ -110,9 +122,8 @@
         if( pivot.value == '1' && input.value.toUpperCase() == past.value.toUpperCase()){
             $('#pivot').val('2');
             $('#myInput').val('');
-            alert($('#pivot').val());
 
-            var x = document.getElementById("myAudio");
+            var x = document.getElementById("past_participle_audio");
             x.play();
 
         }
@@ -121,11 +132,7 @@
         if( pivot.value == '2' && input.value.toUpperCase() == past_participle.value.toUpperCase()){
             $('#pivot').val('0');
             $('#myInput').val('');
-            alert($('#pivot').val());
             next_verb();
-            var x = document.getElementById("myAudio");
-            x.play();
-
         }
 
     }

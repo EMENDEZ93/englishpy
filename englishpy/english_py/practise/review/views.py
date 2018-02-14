@@ -9,7 +9,7 @@ from django.conf import settings
 
 def home(request, template_name='practise/review/home.html'):
     data = {}
-    data['verb'] = Present.objects.all()
+    data['verb'] = Present.objects.all()[:5]
     data['form'] = VerbForm()
 
 
@@ -32,7 +32,7 @@ def next_verb(request):
                 id_used_list.append(int(i))
 
 
-    id_prefer_user =[ i.id for i in Present.objects.all()]
+    id_prefer_user =[ i.id for i in Present.objects.all()[:1]]
 
 
     if len(id_used_list) != len(id_prefer_user):
