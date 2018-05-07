@@ -78,15 +78,12 @@ WSGI_APPLICATION = 'englishpy.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'english_db',
-        'USER': 'pythonpg',
-        'PASSWORD': 'pythonpg',
-        'HOST': '127.0.0.11',
-        'PORT': '5432',
-
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'HOST': 'db',
+        'PORT': 5432,
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators

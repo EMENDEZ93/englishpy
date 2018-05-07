@@ -1,10 +1,9 @@
 from django.conf.urls import url, include
-
-from reload.reload_phrasal import reload_phrasal
-from views import searcher
-from load_topic.views import topic, topic_delete
-from review.views import home, next_verb
-from reload.views import reload, delete_all_verb, reload_other_time, delete_all_other
+from .reload import reload_phrasal
+from .views import searcher
+from .load_topic.views import topic, topic_delete
+from .review.views import home, next_verb
+from .reload.views import reload, delete_all_verb, reload_other_time, delete_all_other
 
 
 urlpatterns = [

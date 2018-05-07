@@ -1,0 +1,11 @@
+sudo docker-compose -f docker-compose.yml build
+sudo docker-compose -f docker-compose.yml up
+sudo docker-compose run django python englishpy/manage.py makemigrations
+sudo docker-compose run django python englishpy/manage.py migrate
+sudo docker-compose up
+sudo docker-compose build
+admin.py
+tests.py
+views.py
+sudo docker-compose run django python3 project/manage.py startapp apps ./project/app/
+sudo chmod -R 777 project/apps/
