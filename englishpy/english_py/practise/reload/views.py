@@ -4,7 +4,6 @@ from django.shortcuts import render
 from ..models import Present, Past, PastParticiple
 
 
-
 def reload(request, template_name='xlsx.html'):
     data = {}
     current_main_folder = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
