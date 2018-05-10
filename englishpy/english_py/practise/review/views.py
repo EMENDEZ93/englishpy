@@ -12,7 +12,6 @@ def home(request, template_name='practise/review/home.html'):
     data['verb'] = Present.objects.all()[:5]
     data['form'] = VerbForm()
 
-
     print(settings.MEDIA_URL)
 
     data['audio'] = 'media/english/verb/present/work.mp3'

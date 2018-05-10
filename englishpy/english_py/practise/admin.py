@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 from django.contrib import admin
-from .models import Present, PastParticiple, Past, Routine, Topic, Vocabulary
+from .models import Present, PastParticiple, Past, Routine, Topic, Vocabulary, LearnedWord
 
 
 class PresentAdmin(admin.ModelAdmin):
@@ -38,3 +38,9 @@ class VocabularyAdmin(admin.ModelAdmin):
     list_display = ('word', 'routine', 'learned',)
 
 admin.site.register(Vocabulary, VocabularyAdmin)
+
+
+class LearnedWordAdmin(admin.ModelAdmin):
+    list_display = ('word', 'topic',)
+
+admin.site.register(LearnedWord, LearnedWordAdmin)
