@@ -41,6 +41,6 @@ admin.site.register(Vocabulary, VocabularyAdmin)
 
 
 class LearnedWordAdmin(admin.ModelAdmin):
-    list_display = ('word', 'topic',)
+    list_display = ('word','topic')
 
 admin.site.register(LearnedWord, LearnedWordAdmin)

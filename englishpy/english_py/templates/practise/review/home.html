@@ -19,8 +19,6 @@
     <button id="show">Show hidden fields</button>
 
     <input id="pivot" name="" type="hidden" value="0">
-
-
     <input id="present" name="" type="hidden" value="">
     <input id="past" name="" type="hidden" value="">
     <input id="past_participle" name="" type="hidden" value="">
@@ -63,10 +61,8 @@
 
           $('#present').val(data.present.verb);
           $("#present_source").attr("src", data.present.audio).detach().appendTo("#present_audio");
-
-
-            var x = document.getElementById("present_audio");
-            x.play();
+          var x = document.getElementById("present_audio");
+          x.play();
 
 
           $('#past').val(data.past.verb);
@@ -108,36 +104,43 @@
 
         pivot = document.getElementById("pivot");
 
+            if( pivot.value == '0' && input.value.toUpperCase() == verb.value.toUpperCase()){
+                $('#pivot').val('1');
+                $('#myInput').val('');
+                var x = document.getElementById("past_audio");
+                x.play();
+            }
 
-        if( pivot.value == '0' && input.value.toUpperCase() == verb.value.toUpperCase()){
-            $('#pivot').val('1');
-            $('#myInput').val('');
+            if( pivot.value == '1' && input.value.toUpperCase() == past.value.toUpperCase()){
+                $('#pivot').val('2');
+                $('#myInput').val('');
+                var x = document.getElementById("past_participle_audio");
+                x.play();
+            }
 
-            var x = document.getElementById("past_audio");
-            x.play();
-
-        }
-
-
-        if( pivot.value == '1' && input.value.toUpperCase() == past.value.toUpperCase()){
-            $('#pivot').val('2');
-            $('#myInput').val('');
-
-            var x = document.getElementById("past_participle_audio");
-            x.play();
-
-        }
-
-
-        if( pivot.value == '2' && input.value.toUpperCase() == past_participle.value.toUpperCase()){
-            $('#pivot').val('0');
-            $('#myInput').val('');
-            next_verb();
-        }
-
+            if( pivot.value == '2' && input.value.toUpperCase() == past_participle.value.toUpperCase()){
+                $('#pivot').val('0');
+                $('#myInput').val('');
+                register_learned_word(verb.value);
+                next_verb();
+            }
     }
 
 
+
+    function register_learned_word(learned_word) {
+      {% if user.is_authenticated %}
+        $.ajax({
+             type:"POST",
+             url:'{% url "register_learned_word" %}',
+             dataType: 'json',
+             data: {'learned_word':learned_word},
+             success: function(data){
+             }
+        });
+        return false;
+      {% endif %}
+    }
 
 
 

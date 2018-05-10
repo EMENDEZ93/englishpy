@@ -82,7 +82,7 @@ class LearnedWord(models.Model):
     topic = models.ForeignKey(Topic, verbose_name=_('Tema'))
 
     def __str__(self):
-        return self.name
+        return self.word
 
 
 class Vocabulary(models.Model):
