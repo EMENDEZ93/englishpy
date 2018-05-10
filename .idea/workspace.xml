@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="88d9f733-71b0-47ea-be76-8d66b310f4a2" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/englishpy/english_py/practise/admin.py" afterPath="$PROJECT_DIR$/englishpy/english_py/practise/admin.py" />
       <change beforePath="$PROJECT_DIR$/englishpy/english_py/practise/models.py" afterPath="$PROJECT_DIR$/englishpy/english_py/practise/models.py" />
       <change beforePath="$PROJECT_DIR$/englishpy/english_py/practise/review/views.py" afterPath="$PROJECT_DIR$/englishpy/english_py/practise/review/views.py" />
-      <change beforePath="$PROJECT_DIR$/englishpy/english_py/practise/urls.py" afterPath="$PROJECT_DIR$/englishpy/english_py/practise/urls.py" />
       <change beforePath="$PROJECT_DIR$/englishpy/english_py/templates/practise/review/home.html" afterPath="$PROJECT_DIR$/englishpy/english_py/templates/practise/review/home.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,11 +31,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/review/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="41" column="4" lean-forward="true" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="25" />
+            <state relative-caret-position="313">
+              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
               <folding>
                 <element signature="e#0#54#0" expanded="true" />
               </folding>
@@ -60,19 +58,21 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/englishpy/english_py/templates/practise/review/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="138" column="0" lean-forward="false" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+            <state relative-caret-position="-128">
+              <caret line="81" column="13" lean-forward="false" selection-start-line="81" selection-start-column="13" selection-end-line="81" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="-182">
+              <caret line="28" column="73" lean-forward="true" selection-start-line="28" selection-start-column="73" selection-end-line="28" selection-end-column="73" />
+              <folding>
+                <element signature="e#24#63#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -116,6 +116,8 @@
       <find>past_audio</find>
       <find>myFunction</find>
       <find>present_source</find>
+      <find>next_verb</find>
+      <find>group</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -151,11 +153,11 @@
         <option value="$PROJECT_DIR$/command.txt" />
         <option value="$PROJECT_DIR$/englishpy/englishpy/urls.py" />
         <option value="$PROJECT_DIR$/englishpy/english_py/templates/practise/review/practice.html" />
-        <option value="$PROJECT_DIR$/englishpy/english_py/practise/models.py" />
         <option value="$PROJECT_DIR$/englishpy/english_py/practise/urls.py" />
-        <option value="$PROJECT_DIR$/englishpy/english_py/templates/practise/review/home.html" />
         <option value="$PROJECT_DIR$/englishpy/english_py/practise/admin.py" />
         <option value="$PROJECT_DIR$/englishpy/english_py/practise/review/views.py" />
+        <option value="$PROJECT_DIR$/englishpy/english_py/templates/practise/review/home.html" />
+        <option value="$PROJECT_DIR$/englishpy/english_py/practise/models.py" />
       </list>
     </option>
   </component>
@@ -500,21 +502,21 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/englishpy/english_py/practise/review/views.py</url>
-          <line>15</line>
-          <option name="timeStamp" value="8" />
+          <line>35</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/englishpy/english_py/practise/review/views.py</url>
-          <line>14</line>
-          <option name="timeStamp" value="11" />
+          <url>file://$PROJECT_DIR$/englishpy/english_py/practise/models.py</url>
+          <line>65</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/englishpy/english_py/practise/review/views.py</url>
-          <line>16</line>
-          <option name="timeStamp" value="12" />
+          <url>file://$PROJECT_DIR$/englishpy/english_py/practise/models.py</url>
+          <line>26</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="14" />
+      <option name="time" value="17" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -794,14 +796,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/englishpy/english_py/templates/practise/review/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="138" column="0" lean-forward="false" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/types.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -820,20 +814,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/models.py">
+    <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/review/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+        <state relative-caret-position="313">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/englishpy/english_py/templates/practise/review/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-128">
+          <caret line="81" column="13" lean-forward="false" selection-start-line="81" selection-start-column="13" selection-end-line="81" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/review/views.py">
+    <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="41" column="4" lean-forward="true" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="25" />
+        <state relative-caret-position="-182">
+          <caret line="28" column="73" lean-forward="true" selection-start-line="28" selection-start-column="73" selection-end-line="28" selection-end-column="73" />
           <folding>
-            <element signature="e#0#54#0" expanded="true" />
+            <element signature="e#24#63#0" expanded="true" />
           </folding>
         </state>
       </provider>

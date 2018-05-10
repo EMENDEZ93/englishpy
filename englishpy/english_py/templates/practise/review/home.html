@@ -50,8 +50,6 @@
     });
 
     function next_verb(){
-
-
       $.ajax({
         type: 'GET',
         url: 'next_verb',
@@ -64,17 +62,13 @@
           var x = document.getElementById("present_audio");
           x.play();
 
-
           $('#past').val(data.past.verb);
           $("#past_source").attr("src", data.past.audio).detach().appendTo("#past_audio");
-
 
           $('#past_participle').val(data.past_participle.verb);
           $("#past_participle_source").attr("src", data.past_participle.audio).detach().appendTo("#past_participle_audio");
 
-
           $('#tes').val(data.present.verb + ' : ' + data.past.verb + ' : ' + data.past_participle.verb );
-
 
           var id = [];
 
@@ -127,7 +121,6 @@
     }
 
 
-
     function register_learned_word(learned_word) {
       {% if user.is_authenticated %}
         $.ajax({
@@ -141,8 +134,6 @@
         return false;
       {% endif %}
     }
-
-
 
 </script>
 
