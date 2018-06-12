@@ -56,10 +56,10 @@ urlpatterns = [
         name='searcher'
     ),
 
-    url(
-        regex=r'^phrasal$',
-        view=reload_phrasal,
-        name='reload_phrasal'
-    ),
+    #url(
+    #    regex=r'^phrasal$',
+    #    view=reload_phrasal,
+    #    name='reload_phrasal'
+    #),
 
 ]
