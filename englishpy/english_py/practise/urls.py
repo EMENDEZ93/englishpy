@@ -2,7 +2,7 @@ from django.conf.urls import url, include
 from .reload import reload_phrasal
 from .views import searcher
 from .load_topic.views import topic, topic_delete
-from .review.views import home, next_verb, register_learned_word
+from .review.views import home, next_verb
 from .reload.views import reload, delete_all_verb, reload_other_time, delete_all_other
 
 
@@ -16,11 +16,6 @@ urlpatterns = [
         regex=r'^next_verb$',
         view=next_verb,
         name='next_verb'
-    ),
-    url(
-        regex=r'^register_learned_word$',
-        view=register_learned_word,
-        name='register_learned_word'
     ),
     url(
         regex=r'^reading$',
@@ -60,11 +55,5 @@ urlpatterns = [
         view=searcher,
         name='searcher'
     ),
-
-    #url(
-    #    regex=r'^phrasal$',
-    #    view=reload_phrasal,
-    #    name='reload_phrasal'
-    #),
 
 ]

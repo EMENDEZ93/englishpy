@@ -12,9 +12,6 @@ from django.conf import settings
 
 def home(request, template_name='practise/review/home.html'):
     data={}
-    data['verb'] = Present.objects.filter(
-        ~Q(verb__in=LearnedWord.objects.filter(topic__routine__user=request.user)
-        .values_list('word', flat=True))).first()
 
     print(settings.MEDIA_URL)
 
@@ -23,36 +20,9 @@ def home(request, template_name='practise/review/home.html'):
 
 
 def next_verb(request):
-    verb = Present.objects.filter(~Q(verb__in=LearnedWord.objects.filter(
-        topic__routine__user=request.user)
-        .values_list('word', flat=True))
-        ).first()
-
-    learned_word(request)
-
     data = {}
-    next_id = int()
-
-    id_used_list = []
-    for i in request.GET['hi']:
-        if not i == ',':
-            if int(i) or int(i) == 0:
-                id_used_list.append(int(i))
-
-
-    id_prefer_user =[ i.id for i in Present.objects.all()[:1]]
-
-
-    if len(id_used_list) != len(id_prefer_user):
-        next_id = randint(0, len(id_prefer_user) - 1)
-        while (next_id in id_used_list):
-            next_id = randint(0, len(id_prefer_user)-1)
-        data['id'] = next_id
-        data['finished_routine'] = False
-    else:
-        data['finished_routine'] = True
-
-    verb = get_object_or_404(Present,pk=id_prefer_user[next_id])
+    learned_word(request)
+    verb = get_object_or_404(Present,verb=exclude_words(request))
     data = {
         'present': verb.present_object(),
         'past': verb.past(),
@@ -73,3 +43,8 @@ def learned_word(request):
 
     return ''
 
+
+def exclude_words(request):
+    learned_present_verb = Learned_Present.objects.filter(user=request.user, category=VerbTypes.REGULAR).values_list('verb', flat=True)
+    id_verb = Present.objects.all().exclude(verb__in=learned_present_verb).values_list('verb', flat=True)[:1]
+    return id_verb[0]

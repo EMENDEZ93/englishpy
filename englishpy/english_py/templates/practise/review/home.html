@@ -122,37 +122,16 @@
             if( pivot.value == '2' && input.value.toUpperCase() == past_participle.value.toUpperCase()){
                 $('#pivot').val('0');
                 $('#myInput').val('');
-                register_learned_word(verb.value);
-                next_verb();
+
+                if(iteration == 1){
+                  next_verb();
+                  iteration = 0;
+                } else {
+                  iteration ++;
+                  alert(iteration);
+                }
             }
     }
-
-
-
-        if( pivot.value == '1' && input.value.toUpperCase() == past.value.toUpperCase()){
-            $('#pivot').val('2');
-            $('#myInput').val('');
-
-            var x = document.getElementById("past_participle_audio");
-            x.play();
-
-        }
-
-
-        if( pivot.value == '2' && input.value.toUpperCase() == past_participle.value.toUpperCase()){
-            $('#pivot').val('0');
-            $('#myInput').val('');
-
-            if(iteration == 2){
-              next_verb();
-              iteration = 0;
-            }else{
-              iteration ++;
-            }
-        }
-
-    }
-
 </script>
 
 </html>

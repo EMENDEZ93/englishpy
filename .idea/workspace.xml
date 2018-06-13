@@ -3,6 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="88d9f733-71b0-47ea-be76-8d66b310f4a2" name="Default" comment="">
 <<<<<<< HEAD
+<<<<<<< Updated upstream
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/englishpy.iml" afterPath="$PROJECT_DIR$/.idea/englishpy.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/englishpy/english_py/practise/models.py" afterPath="$PROJECT_DIR$/englishpy/english_py/practise/models.py" />
+      <change beforePath="$PROJECT_DIR$/englishpy/english_py/practise/urls.py" afterPath="$PROJECT_DIR$/englishpy/english_py/practise/urls.py" />
+      <change beforePath="$PROJECT_DIR$/englishpy/englishpy/settings.py" afterPath="$PROJECT_DIR$/englishpy/englishpy/settings.py" />
+=======
+>>>>>>> Stashed changes
       <change type="DELETED" beforePath="$PROJECT_DIR$/englishpy/db.sqlite3" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/env/bin/activate" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/env/bin/activate.csh" afterPath="" />
@@ -4549,12 +4560,16 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/englishpy/english_py/practise/models.py" afterPath="$PROJECT_DIR$/englishpy/english_py/practise/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/englishpy/english_py/practise/review/views.py" afterPath="$PROJECT_DIR$/englishpy/english_py/practise/review/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/englishpy/english_py/templates/practise/review/home.html" afterPath="$PROJECT_DIR$/englishpy/english_py/templates/practise/review/home.html" />
+<<<<<<< Updated upstream
 =======
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/englishpy/english_py/practise/models.py" afterPath="$PROJECT_DIR$/englishpy/english_py/practise/models.py" />
       <change beforePath="$PROJECT_DIR$/englishpy/english_py/practise/review/views.py" afterPath="$PROJECT_DIR$/englishpy/english_py/practise/review/views.py" />
       <change beforePath="$PROJECT_DIR$/englishpy/english_py/templates/practise/review/home.html" afterPath="$PROJECT_DIR$/englishpy/english_py/templates/practise/review/home.html" />
 >>>>>>> master
+=======
+>>>>>>> parent of 4e37377... Merge remote-tracking branch 'origin/master'
+>>>>>>> Stashed changes
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -4566,22 +4581,97 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
+      <file leaf-file-name="docker-compose.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+=======
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/urls.py">
+<<<<<<< Updated upstream
 <<<<<<< HEAD
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="130">
               <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
+=======
+>>>>>>> parent of 4e37377... Merge remote-tracking branch 'origin/master'
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Dockerfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="78">
+              <caret line="6" column="11" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/load_topic/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="91">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="91">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+>>>>>>> Stashed changes
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+=======
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/englishpy/english_py/templates/practise/review/home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="78">
+              <caret line="128" column="0" lean-forward="true" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+              <folding />
+>>>>>>> parent of 4e37377... Merge remote-tracking branch 'origin/master'
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="command.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/command.txt">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="130">
+              <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+=======
+            <state relative-caret-position="117">
+              <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+>>>>>>> parent of 4e37377... Merge remote-tracking branch 'origin/master'
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< Updated upstream
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/review/views.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -4655,12 +4745,25 @@
         </entry>
       </file>
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+      <file leaf-file-name="reload_phrasal.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/reload/reload_phrasal.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+=======
+>>>>>>> Stashed changes
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/englishpy/englishpy/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="507">
               <caret line="39" column="5" lean-forward="false" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="25" />
               <folding />
+<<<<<<< Updated upstream
 =======
       <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/admin.py">
@@ -4671,11 +4774,24 @@
                 <element signature="e#24#63#0" expanded="true" />
               </folding>
 >>>>>>> master
+=======
+>>>>>>> parent of 4e37377... Merge remote-tracking branch 'origin/master'
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
       </file>
 <<<<<<< HEAD
+<<<<<<< Updated upstream
+=======
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/englishpy/englishpy/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="143">
+              <caret line="74" column="10" lean-forward="false" selection-start-line="74" selection-start-column="10" selection-end-line="74" selection-end-column="10" />
+              <folding />
+=======
+>>>>>>> Stashed changes
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/englishpy/englishpy/urls.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -4684,6 +4800,7 @@
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
+<<<<<<< Updated upstream
 =======
       <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/englishpy/english_py/templates/practise/review/home.html">
@@ -4692,17 +4809,31 @@
               <caret line="81" column="13" lean-forward="false" selection-start-line="81" selection-start-column="13" selection-end-line="81" selection-end-column="13" />
               <folding />
 >>>>>>> master
+=======
+>>>>>>> parent of 4e37377... Merge remote-tracking branch 'origin/master'
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
       </file>
 <<<<<<< HEAD
+<<<<<<< Updated upstream
+=======
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="78">
+              <caret line="6" column="49" lean-forward="false" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
+=======
+>>>>>>> Stashed changes
       <file leaf-file-name="docker-compose.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docker-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="182">
               <caret line="14" column="10" lean-forward="false" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+>>>>>>> parent of 4e37377... Merge remote-tracking branch 'origin/master'
               <folding />
+<<<<<<< Updated upstream
 =======
       <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/models.py">
@@ -4721,16 +4852,34 @@
         <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/reload/reload_phrasal.py">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+=======
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="types.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/types.py">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="26">
+              <caret line="2" column="9" lean-forward="false" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+              <folding />
+=======
+>>>>>>> Stashed changes
             <state relative-caret-position="117">
               <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
+<<<<<<< Updated upstream
 =======
             <state relative-caret-position="260">
               <caret line="20" column="6" lean-forward="false" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
               <folding />
 >>>>>>> master
+=======
+>>>>>>> parent of 4e37377... Merge remote-tracking branch 'origin/master'
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
@@ -4762,6 +4911,7 @@
       <find>verb</find>
 <<<<<<< HEAD
 =======
+<<<<<<< Updated upstream
       <find>reload_phrasal</find>
       <find>past_audio</find>
       <find>myFunction</find>
@@ -4769,6 +4919,10 @@
       <find>next_verb</find>
 >>>>>>> master
       <find>group</find>
+=======
+      <find>group</find>
+>>>>>>> parent of 4e37377... Merge remote-tracking branch 'origin/master'
+>>>>>>> Stashed changes
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -4794,8 +4948,10 @@
         <option value="$PROJECT_DIR$/englishpy/english_py/practise/load_topic/views.py" />
         <option value="$PROJECT_DIR$/englishpy/english_py/templates/searcher.html" />
         <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/englishpy/englishpy/urls.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/englishpy/english_py/practise/reload/views.py" />
+        <option value="$PROJECT_DIR$/englishpy/english_py/practise/reload/reload_phrasal.py" />
         <option value="$PROJECT_DIR$/englishpy/english_py/practise/views.py" />
         <option value="$PROJECT_DIR$/Dockerfile" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
@@ -4806,6 +4962,7 @@
         <option value="$PROJECT_DIR$/command.txt" />
 <<<<<<< HEAD
         <option value="$PROJECT_DIR$/englishpy/english_py/practise/models.py" />
+<<<<<<< Updated upstream
         <option value="$PROJECT_DIR$/englishpy/english_py/practise/admin.py" />
         <option value="$PROJECT_DIR$/englishpy/english_py/templates/practise/review/home.html" />
         <option value="$PROJECT_DIR$/englishpy/english_py/practise/review/views.py" />
@@ -4818,21 +4975,42 @@
         <option value="$PROJECT_DIR$/englishpy/english_py/templates/practise/review/home.html" />
         <option value="$PROJECT_DIR$/englishpy/english_py/practise/models.py" />
 >>>>>>> master
+=======
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/englishpy/english_py/practise/urls.py" />
+=======
+        <option value="$PROJECT_DIR$/englishpy/english_py/practise/admin.py" />
+        <option value="$PROJECT_DIR$/englishpy/english_py/templates/practise/review/home.html" />
+        <option value="$PROJECT_DIR$/englishpy/english_py/practise/review/views.py" />
+>>>>>>> parent of 4e37377... Merge remote-tracking branch 'origin/master'
+>>>>>>> Stashed changes
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
 <<<<<<< HEAD
+<<<<<<< Updated upstream
+=======
+    <option name="x" value="53" />
+    <option name="y" value="151" />
+    <option name="width" value="1360" />
+    <option name="height" value="617" />
+=======
+>>>>>>> Stashed changes
     <option name="x" value="5" />
     <option name="y" value="193" />
     <option name="width" value="1338" />
     <option name="height" value="567" />
+<<<<<<< Updated upstream
 =======
     <option name="x" value="60" />
     <option name="y" value="200" />
     <option name="width" value="1374" />
     <option name="height" value="627" />
 >>>>>>> master
+=======
+>>>>>>> parent of 4e37377... Merge remote-tracking branch 'origin/master'
+>>>>>>> Stashed changes
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -4850,6 +5028,47 @@
     </navigator>
     <panes>
 <<<<<<< HEAD
+<<<<<<< Updated upstream
+=======
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="englishpy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="englishpy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="englishpy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="englishpy" type="462c0819:PsiDirectoryNode" />
+              <item name="englishpy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="englishpy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="englishpy" type="462c0819:PsiDirectoryNode" />
+              <item name="englishpy" type="462c0819:PsiDirectoryNode" />
+              <item name="english_py" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="englishpy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="englishpy" type="462c0819:PsiDirectoryNode" />
+              <item name="englishpy" type="462c0819:PsiDirectoryNode" />
+              <item name="english_py" type="462c0819:PsiDirectoryNode" />
+              <item name="practise" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="englishpy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="englishpy" type="462c0819:PsiDirectoryNode" />
+              <item name="englishpy" type="462c0819:PsiDirectoryNode" />
+              <item name="englishpy" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+=======
+>>>>>>> Stashed changes
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -4939,6 +5158,65 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+<<<<<<< Updated upstream
+=======
+              <option name="myItemId" value="practise" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="review" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="englishpy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="englishpy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="englishpy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="english_py" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="practise" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="load_topic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="englishpy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="englishpy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="englishpy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="english_py" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+>>>>>>> Stashed changes
               <option name="myItemId" value="practise" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -5055,8 +5333,65 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="englishpy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="englishpy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="englishpy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="english_py" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="practise" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="review" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="englishpy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="englishpy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="englishpy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="english_py" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="media" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="english" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="verb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+<<<<<<< Updated upstream
 =======
       <pane id="ProjectPane">
         <subPane>
@@ -5152,11 +5487,15 @@
       <pane id="Scope" />
 >>>>>>> master
       <pane id="Scratches" />
+=======
+      <pane id="Scratches" />
+>>>>>>> parent of 4e37377... Merge remote-tracking branch 'origin/master'
+>>>>>>> Stashed changes
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../projects/sic-web" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/edwin/Documentos/englishpy/englishpy/english_py/practise/types.py" />
   </component>
@@ -5342,6 +5681,7 @@
   </component>
   <component name="ToolWindowManager">
 <<<<<<< HEAD
+<<<<<<< Updated upstream
     <frame x="5" y="193" width="1338" height="567" extended-state="0" />
     <editor active="true" />
     <layout>
@@ -5352,23 +5692,35 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29985443" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
 >>>>>>> master
+=======
+    <frame x="53" y="151" width="1360" height="617" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30367646" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+=======
+    <frame x="5" y="193" width="1338" height="567" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30913174" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+>>>>>>> parent of 4e37377... Merge remote-tracking branch 'origin/master'
+>>>>>>> Stashed changes
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="UnknownFeatures">
@@ -5401,10 +5753,17 @@
         </line-breakpoint>
       </breakpoints>
 <<<<<<< HEAD
+<<<<<<< Updated upstream
       <option name="time" value="11" />
 =======
       <option name="time" value="17" />
 >>>>>>> master
+=======
+      <option name="time" value="3" />
+=======
+      <option name="time" value="11" />
+>>>>>>> parent of 4e37377... Merge remote-tracking branch 'origin/master'
+>>>>>>> Stashed changes
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -5526,6 +5885,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="91">
           <caret line="7" column="58" lean-forward="false" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -5533,13 +5893,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
+=======
+    <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/review/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> Stashed changes
     <entry file="file://$PROJECT_DIR$/englishpy/english_py/static/eg/photos/js/basic-upload.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -5547,6 +5920,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -5554,6 +5928,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
           <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -5562,6 +5937,29 @@
         <state relative-caret-position="406">
           <caret line="56" column="3" lean-forward="true" selection-start-line="56" selection-start-column="3" selection-end-line="56" selection-end-column="3" />
 <<<<<<< HEAD
+<<<<<<< Updated upstream
+=======
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/reload/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/englishpy/englishpy/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+=======
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
@@ -5577,12 +5975,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> parent of 4e37377... Merge remote-tracking branch 'origin/master'
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2/types.pyi">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
@@ -5599,17 +6002,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
           <caret line="6" column="11" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+=======
+        <state relative-caret-position="26">
+          <caret line="2" column="9" lean-forward="false" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+          <folding />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
+    <entry file="file://$PROJECT_DIR$/englishpy/englishpy/settings.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="0">
           <caret line="0" column="15" lean-forward="true" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
+=======
+<<<<<<< HEAD
+        <state relative-caret-position="143">
+          <caret line="74" column="10" lean-forward="false" selection-start-line="74" selection-start-column="10" selection-end-line="74" selection-end-column="10" />
+>>>>>>> Stashed changes
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="91">
@@ -5637,14 +6052,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="91">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+=======
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2/types.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> Stashed changes
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+    <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/models.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="6" column="49" lean-forward="false" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
+=======
         <state relative-caret-position="182">
           <caret line="14" column="10" lean-forward="false" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+<<<<<<< Updated upstream
 =======
         <state relative-caret-position="247">
           <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
@@ -5663,6 +6088,9 @@
         <state relative-caret-position="26">
           <caret line="2" column="72" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="72" />
 >>>>>>> master
+=======
+>>>>>>> parent of 4e37377... Merge remote-tracking branch 'origin/master'
+>>>>>>> Stashed changes
           <folding />
         </state>
       </provider>
@@ -5670,18 +6098,27 @@
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/reload/reload_phrasal.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="117">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+=======
+        <state relative-caret-position="325">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+>>>>>>> Stashed changes
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/command.txt">
+=======
     <entry file="file://$PROJECT_DIR$/englishpy/englishpy/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="507">
           <caret line="39" column="5" lean-forward="false" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="25" />
+<<<<<<< Updated upstream
 =======
     <entry file="file:///usr/local/lib/python2.7/dist-packages/django/conf/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -5707,20 +6144,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="39">
           <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+=======
+>>>>>>> Stashed changes
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/urls.py">
+    <entry file="file://$PROJECT_DIR$/englishpy/englishpy/urls.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="130">
           <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+=======
+        <state relative-caret-position="143">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+>>>>>>> Stashed changes
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/command.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
@@ -5760,11 +6205,58 @@
         <state relative-caret-position="390">
           <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
 >>>>>>> master
+=======
+    <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/reload/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/urls.py">
+>>>>>>> parent of 4e37377... Merge remote-tracking branch 'origin/master'
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
 <<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="6" column="11" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+=======
+    <entry file="file://$PROJECT_DIR$/command.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+>>>>>>> parent of 4e37377... Merge remote-tracking branch 'origin/master'
+>>>>>>> Stashed changes
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
@@ -5784,8 +6276,52 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="22" column="14" lean-forward="false" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="35" />
+=======
+    <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/load_topic/views.py">
+=======
+    <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/admin.py">
+>>>>>>> parent of 4e37377... Merge remote-tracking branch 'origin/master'
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+>>>>>>> Stashed changes
           <folding>
             <element signature="e#0#41#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="89" column="6" lean-forward="false" selection-start-line="89" selection-start-column="6" selection-end-line="89" selection-end-column="6" />
+          <folding>
+            <element signature="e#24#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/englishpy/english_py/templates/practise/review/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="128" column="0" lean-forward="true" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/englishpy/english_py/practise/review/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="71" column="0" lean-forward="true" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+>>>>>>> parent of 4e37377... Merge remote-tracking branch 'origin/master'
           </folding>
         </state>
       </provider>
