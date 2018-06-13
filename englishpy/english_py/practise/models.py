@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
+from django.contrib.auth.models import User
 from django.shortcuts import get_object_or_404
 from django.utils.translation import ugettext_lazy as _
 from django.db import models
@@ -25,7 +26,8 @@ class Present(models.Model):
     def present_object(self):
         data = {
             'verb':self.verb,
-            'audio':'media/english/verb/present/{}.mp3'.format(self.verb)
+            'audio':'media/english/verb/present/{}.mp3'.format(self.verb),
+            'category':self.category,
         }
         return data
 
@@ -83,4 +85,10 @@ class Vocabulary(models.Model):
 
     def __str__(self):
         return self.word
+
+
+class Learned_Present(models.Model):
+    user = models.ForeignKey(User, verbose_name=_('usuario'))
+    verb = models.CharField(_('Present'), max_length=255, unique=True)
+    category = models.CharField(_('Type'),max_length=255, default=VerbTypes.REGULAR)
 

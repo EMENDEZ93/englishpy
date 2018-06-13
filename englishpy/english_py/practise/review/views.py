@@ -1,6 +1,8 @@
 from django.shortcuts import render, get_object_or_404
+
+from ..types import VerbTypes
 from .forms import VerbForm
-from ..models import Present
+from ..models import Present, Learned_Present
 from django.http import JsonResponse
 from random import randint
 import os
@@ -12,7 +14,6 @@ def home(request, template_name='practise/review/home.html'):
     data['verb'] = Present.objects.all()[:5]
     data['form'] = VerbForm()
 
-
     print(settings.MEDIA_URL)
 
     data['audio'] = 'media/english/verb/present/work.mp3'
@@ -21,6 +22,8 @@ def home(request, template_name='practise/review/home.html'):
 
 
 def next_verb(request):
+
+    learned_word(request)
 
     data = {}
     next_id = int()
@@ -54,5 +57,15 @@ def next_verb(request):
     return JsonResponse(data)
 
 
+def learned_word(request):
+    if request.user.is_authenticated:
+        if request.GET['learned_word'] != '':
+            if not Learned_Present.objects.filter(user=request.user,verb=request.GET['learned_word']):
+                Learned_Present.objects.create(
+                    user=request.user,
+                    verb=request.GET['learned_word'],
+                    category=VerbTypes.REGULAR
+                )
 
+    return ''
 

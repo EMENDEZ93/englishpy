@@ -1,4 +1,5 @@
-{% load static %}<!DOCTYPE html>
+{% load static %}
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -22,6 +23,7 @@
 
 
     <input id="present" name="" type="hidden" value="">
+    <input id="category" name="" type="hidden" value="">
     <input id="past" name="" type="hidden" value="">
     <input id="past_participle" name="" type="hidden" value="">
     <input id="group" name="" type="hidden" value="">
@@ -52,33 +54,29 @@
     });
 
     function next_verb(){
-
-
       $.ajax({
         type: 'GET',
         url: 'next_verb',
         dataType: 'json',
-        data:{'hi': $('#group').val()},
+        data:{'hi': $('#group').val(),
+              'learned_word': $('#present').val(),
+              'category': $('#category').val()
+             },
         success: function (data) {
 
+          $('#category').val(data.present.category);
           $('#present').val(data.present.verb);
           $("#present_source").attr("src", data.present.audio).detach().appendTo("#present_audio");
-
-
-            var x = document.getElementById("present_audio");
-            x.play();
-
+          var x = document.getElementById("present_audio");
+          x.play();
 
           $('#past').val(data.past.verb);
           $("#past_source").attr("src", data.past.audio).detach().appendTo("#past_audio");
 
-
           $('#past_participle').val(data.past_participle.verb);
           $("#past_participle_source").attr("src", data.past_participle.audio).detach().appendTo("#past_participle_audio");
 
-
           $('#tes').val(data.present.verb + ' : ' + data.past.verb + ' : ' + data.past_participle.verb );
-
 
           var id = [];
 
@@ -99,6 +97,7 @@
     }
 
 
+    var iteration = 0;
     function myFunction() {
         var input, verb;
         input = document.getElementById("myInput");
@@ -132,14 +131,16 @@
         if( pivot.value == '2' && input.value.toUpperCase() == past_participle.value.toUpperCase()){
             $('#pivot').val('0');
             $('#myInput').val('');
-            next_verb();
+
+            if(iteration == 2){
+              next_verb();
+              iteration = 0;
+            }else{
+              iteration ++;
+            }
         }
 
     }
-
-
-
-
 
 </script>
 
