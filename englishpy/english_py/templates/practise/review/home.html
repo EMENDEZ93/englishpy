@@ -20,8 +20,6 @@
     <button id="show">Show hidden fields</button>
 
     <input id="pivot" name="" type="hidden" value="0">
-
-
     <input id="present" name="" type="hidden" value="">
     <input id="category" name="" type="hidden" value="">
     <input id="past" name="" type="hidden" value="">
@@ -107,15 +105,28 @@
 
         pivot = document.getElementById("pivot");
 
+            if( pivot.value == '0' && input.value.toUpperCase() == verb.value.toUpperCase()){
+                $('#pivot').val('1');
+                $('#myInput').val('');
+                var x = document.getElementById("past_audio");
+                x.play();
+            }
 
-        if( pivot.value == '0' && input.value.toUpperCase() == verb.value.toUpperCase()){
-            $('#pivot').val('1');
-            $('#myInput').val('');
+            if( pivot.value == '1' && input.value.toUpperCase() == past.value.toUpperCase()){
+                $('#pivot').val('2');
+                $('#myInput').val('');
+                var x = document.getElementById("past_participle_audio");
+                x.play();
+            }
 
-            var x = document.getElementById("past_audio");
-            x.play();
+            if( pivot.value == '2' && input.value.toUpperCase() == past_participle.value.toUpperCase()){
+                $('#pivot').val('0');
+                $('#myInput').val('');
+                register_learned_word(verb.value);
+                next_verb();
+            }
+    }
 
-        }
 
 
         if( pivot.value == '1' && input.value.toUpperCase() == past.value.toUpperCase()){

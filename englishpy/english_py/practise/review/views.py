@@ -5,23 +5,28 @@ from .forms import VerbForm
 from ..models import Present, Learned_Present
 from django.http import JsonResponse
 from random import randint
+from django.db.models import Q
 import os
 from django.conf import settings
 
 
 def home(request, template_name='practise/review/home.html'):
-    data = {}
-    data['verb'] = Present.objects.all()[:5]
-    data['form'] = VerbForm()
+    data={}
+    data['verb'] = Present.objects.filter(
+        ~Q(verb__in=LearnedWord.objects.filter(topic__routine__user=request.user)
+        .values_list('word', flat=True))).first()
 
     print(settings.MEDIA_URL)
 
     data['audio'] = 'media/english/verb/present/work.mp3'
-
     return render(request, template_name, data)
 
 
 def next_verb(request):
+    verb = Present.objects.filter(~Q(verb__in=LearnedWord.objects.filter(
+        topic__routine__user=request.user)
+        .values_list('word', flat=True))
+        ).first()
 
     learned_word(request)
 
@@ -53,7 +58,6 @@ def next_verb(request):
         'past': verb.past(),
         'past_participle':verb.past_participle()
     }
-
     return JsonResponse(data)
 
 
