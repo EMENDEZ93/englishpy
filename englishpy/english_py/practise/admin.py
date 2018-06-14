@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 from django.contrib import admin
-from .models import Present, PastParticiple, Past, Routine, Topic, Vocabulary, Learned_Present
+from .models import Present, PastParticiple, Past, Routine, Topic, Vocabulary, LearnedPresent, SentencePresent
 
 
 class PresentAdmin(admin.ModelAdmin):
@@ -43,4 +43,10 @@ admin.site.register(Vocabulary, VocabularyAdmin)
 class LearnedPresentAdmin(admin.ModelAdmin):
     list_display = ('user', 'verb', 'category')
 
-admin.site.register(Learned_Present, LearnedPresentAdmin)
+admin.site.register(LearnedPresent, LearnedPresentAdmin)
+
+
+class SentencePresentAdmin(admin.ModelAdmin):
+    list_display = ('verb', 'sentence', 'secondary_id', 'auxiliary')
+
+admin.site.register(SentencePresent, SentencePresentAdmin)
