@@ -3,7 +3,7 @@ from django.conf.urls import url, include
 from .reload.reload_sentence import reload_sentence
 from .views import searcher
 from .load_topic.views import topic, topic_delete
-from .review.views import home, next_verb
+from .review.views import home, next_verb, next_sentence
 from .reload.views import reload, delete_all_verb, reload_other_time, delete_all_other
 
 
@@ -62,6 +62,11 @@ urlpatterns = [
         regex=r'^sentence$',
         view=reload_sentence,
         name='reload_sentence'
+    ),
+    url(
+        regex=r'^next_sentence$',
+        view=next_sentence,
+        name='next_sentence'
     ),
 
 ]

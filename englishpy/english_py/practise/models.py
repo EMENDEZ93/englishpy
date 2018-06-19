@@ -31,6 +31,9 @@ class Present(models.Model):
         }
         return data
 
+    def get_all_sentence(self):
+        #return SentencePresent.objects.filter(verb=self)
+        return SentencePresent.objects.filter(verb=self).values_list('sentence', flat=True)
 
 class Past(models.Model):
     verb = models.CharField(_('Past'), max_length=255, unique=True)

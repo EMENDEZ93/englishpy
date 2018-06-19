@@ -13,6 +13,7 @@
     <audio id="present_audio"><source id="present_source" src="" type="audio/mpeg"></audio>
     <audio id="past_audio"><source id="past_source" src="" type="audio/mpeg"></audio>
     <audio id="past_participle_audio"><source id="past_participle_source" src="" type="audio/mpeg"></audio>
+    <audio id="sentence_audio"><source id="sentence_source" src="" type="audio/mpeg"></audio>
 
     <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
 
@@ -20,10 +21,16 @@
     <button id="show">Show hidden fields</button>
 
     <input id="pivot" name="" type="hidden" value="0">
+
+
     <input id="present" name="" type="hidden" value="">
     <input id="category" name="" type="hidden" value="">
     <input id="past" name="" type="hidden" value="">
     <input id="past_participle" name="" type="hidden" value="">
+    <input id="sentence" name="" type="hidden" value="">
+
+
+
     <input id="group" name="" type="hidden" value="">
 
     <input id="finished_routine" name="" type="hidden" value="">
@@ -35,7 +42,9 @@
 <script src="{% static 'eg/js/jquery-3.1.1.min.js' %}"></script>
 <script>
 
-
+    var iteration = 0;
+    var number_sentence = 0;
+    var number_sentence_pivot = 1;
     $("#load").click(function(){
        if($('#finished_routine').val() != 'true'){
            next_verb();
@@ -44,7 +53,6 @@
        }
 
     });
-
 
 
     $("#show").click(function(){
@@ -56,11 +64,13 @@
         type: 'GET',
         url: 'next_verb',
         dataType: 'json',
-        data:{'hi': $('#group').val(),
+        data:{'iteration': iteration,
               'learned_word': $('#present').val(),
               'category': $('#category').val()
              },
         success: function (data) {
+
+          number_sentence = data.number_sentence;
 
           $('#category').val(data.present.category);
           $('#present').val(data.present.verb);
@@ -76,61 +86,92 @@
 
           $('#tes').val(data.present.verb + ' : ' + data.past.verb + ' : ' + data.past_participle.verb );
 
-          var id = [];
-
-            if($('#group').val()){
-              id.push($('#group').val());
-              id.push(data.id);
-              $('#group').val(id);
-            } else {
-              id.push(data.id);
-              $('#group').val(id);
-            }
-            //alert($('#group').val());
-            $('#finished_routine').val(data.finished_routine);
-
 
         }
       });
     }
 
 
-    var iteration = 0;
+    function next_sentence(){
+      $.ajax({
+        type: 'GET',
+        url: 'next_sentence',
+        dataType: 'json',
+        data:{'present': $('#present').val(),
+              'number_sentence_pivot': number_sentence_pivot,
+              'number_sentence': number_sentence,
+             },
+        success: function (data) {
+            $('#tes').val(data.sentence);
+
+            if(number_sentence_pivot < number_sentence){
+               number_sentence_pivot ++;
+            } else {
+              $('#pivot').val('0');
+               number_sentence_pivot = 0;
+
+                    if(iteration == 1){
+                      next_verb();
+                      iteration = 0;
+                    } else {
+                      iteration ++;
+                      alert(iteration);
+                    }
+
+         }}
+      });
+    }
+
+
     function myFunction() {
         var input, verb;
         input = document.getElementById("myInput");
         verb = document.getElementById("present");
         past = document.getElementById("past");
         past_participle = document.getElementById("past_participle");
+        sentence = document.getElementById("sentence");
 
         pivot = document.getElementById("pivot");
 
-            if( pivot.value == '0' && input.value.toUpperCase() == verb.value.toUpperCase()){
+            if( pivot.value == '0' && input.value.toUpperCase() == verb.value.toUpperCase() && input.value.toUpperCase() != ''){
                 $('#pivot').val('1');
                 $('#myInput').val('');
                 var x = document.getElementById("past_audio");
                 x.play();
             }
 
-            if( pivot.value == '1' && input.value.toUpperCase() == past.value.toUpperCase()){
+            if( pivot.value == '1' && input.value.toUpperCase() == past.value.toUpperCase() && input.value.toUpperCase() != ''){
                 $('#pivot').val('2');
                 $('#myInput').val('');
                 var x = document.getElementById("past_participle_audio");
                 x.play();
             }
 
-            if( pivot.value == '2' && input.value.toUpperCase() == past_participle.value.toUpperCase()){
-                $('#pivot').val('0');
+            if( pivot.value == '2' && input.value.toUpperCase() == past_participle.value.toUpperCase() && input.value.toUpperCase() != ''){
                 $('#myInput').val('');
 
-                if(iteration == 1){
-                  next_verb();
-                  iteration = 0;
+                if(number_sentence == 0){
+                  $('#pivot').val('0');
+
+                   if(iteration == 1){
+                     next_verb();
+                     iteration = 0;
+                   } else {
+                     iteration ++;
+                     alert(iteration);
+                   }
+
                 } else {
-                  iteration ++;
-                  alert(iteration);
+                  $('#pivot').val('3');
                 }
+
             }
+
+            if( pivot.value == '3' && input.value.toUpperCase() == sentence.value.toUpperCase() ){
+                $('#myInput').val('');
+                next_sentence();
+            }
+
     }
 </script>
 
