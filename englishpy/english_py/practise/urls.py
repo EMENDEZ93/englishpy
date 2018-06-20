@@ -3,7 +3,7 @@ from django.conf.urls import url, include
 from .reload.reload_sentence import reload_sentence
 from .views import searcher
 from .load_topic.views import topic, topic_delete
-from .review.views import home, next_verb, next_sentence
+from .review.views import home, next_verb, next_sentence, learned_word, get_past, get_past_participle
 from .reload.views import reload, delete_all_verb, reload_other_time, delete_all_other
 
 
@@ -18,6 +18,21 @@ urlpatterns = [
         regex=r'^next_verb$',
         view=next_verb,
         name='next_verb'
+    ),
+    url(
+        regex=r'^get_past/(?P<present>\w+)$',
+        view=get_past,
+        name='get_past'
+    ),
+    url(
+        regex=r'^get_past/participle/(?P<present>\w+)$',
+        view=get_past_participle,
+        name='get_past_participle'
+    ),
+    url(
+        regex=r'^learned_word/(?P<learned_word>\w+)$',
+        view=learned_word,
+        name='learned_word'
     ),
     url(
         regex=r'^reading$',

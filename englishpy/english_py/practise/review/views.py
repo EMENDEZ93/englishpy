@@ -18,32 +18,35 @@ def home(request, template_name='practise/review/home.html'):
 
 
 def next_verb(request):
-    print('*************************')
-    print(request.GET['iteration'])
-    data = {}
-    learned_word(request)
     verb = get_object_or_404(Present,verb=exclude_words(request))
-    data = {
-        'present': verb.present_object(),
-        'past': verb.past(),
-        'past_participle':verb.past_participle(),
-        'number_sentence':len(verb.get_all_sentence())
-    }
+    data = {'present': verb.present_object()}
     return JsonResponse(data)
 
 
-def learned_word(request):
-    if request.GET['iteration'] == '1':
-        if request.user.is_authenticated:
-            if request.GET['learned_word'] != '':
-                if not LearnedPresent.objects.filter(user=request.user,verb=request.GET['learned_word']):
-                    LearnedPresent.objects.create(
-                        user=request.user,
-                        verb=request.GET['learned_word'],
-                        category=VerbTypes.REGULAR
-                    )
+def get_past(request, present):
+    verb = get_object_or_404(Present,verb=present)
+    data = {'past': verb.past()}
+    return JsonResponse(data)
 
-    return ''
+
+def get_past_participle(request, present):
+    verb = get_object_or_404(Present,verb=present)
+    data = {'past_participle': verb.past_participle()}
+    return JsonResponse(data)
+
+
+def learned_word(request, learned_word):
+    data={}
+    if request.user.is_authenticated:
+        if learned_word != '':
+            if not LearnedPresent.objects.filter(user=request.user,verb=learned_word):
+                LearnedPresent.objects.create(
+                    user=request.user,
+                    verb=learned_word,
+                    category=VerbTypes.REGULAR
+                )
+
+    return JsonResponse(data)
 
 
 def exclude_words(request):
