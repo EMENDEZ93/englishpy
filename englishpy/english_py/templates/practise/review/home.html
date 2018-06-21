@@ -36,10 +36,12 @@
         data:{},
         async: false,
         success: function (data) {
+
            $('#word').val(data.present.verb);
            $('#present').val(data.present.verb);
            $("#word").attr('name', 'present');
            $('#test').val(data.present.verb);
+
         }
       });
     }
@@ -57,6 +59,7 @@
            $('#word').val(data.past.verb);
            $("#word").attr('name', 'past');
            $('#test').val(data.past.verb);
+
         }
       });
     }
@@ -74,6 +77,51 @@
            $('#word').val(data.past_participle.verb);
            $("#word").attr('name', 'past_participle');
            $('#test').val(data.past_participle.verb);
+
+        }
+      });
+    }
+
+    var sentence_number = 0;
+    function get_sentence(sentence_number_){
+      sentence_number = sentence_number_;
+      $.ajax({
+        type: 'GET',
+        url: 'get_sentence/'+sentence_number+'/'+$('#present').val(),
+        dataType: 'json',
+        data:{},
+        async: false,
+        success: function (data) {
+
+
+           $('#word').val(data.sentence);
+           $("#word").attr('name', 'sentence');
+           $('#test').val(data.sentence);
+
+           sentence_number--;
+
+        }
+      });
+    }
+
+
+    function get_sentence_number(){
+      $.ajax({
+        type: 'GET',
+        url: 'get_sentence_number/'+$('#present').val(),
+        dataType: 'json',
+        data:{},
+        async: false,
+        success: function (data) {
+
+           if( data.sentence_number == 0 ){
+             learned_word();
+             next_verb();
+
+           } else if( data.sentence_number > 0 ){
+             get_sentence(data.sentence_number);
+           }
+
         }
       });
     }
@@ -97,11 +145,22 @@
 
            if( $("#word").attr('name') == 'present' ){
              get_past();
+
            } else if( $("#word").attr('name') == 'past' ){
              get_past_participle();
+
            } else if( $("#word").attr('name') == 'past_participle' ){
-             learned_word();
-             next_verb();
+             get_sentence_number();
+
+           } else if( $("#word").attr('name') == 'sentence' ){
+
+                if( sentence_number == 0 ){
+                  learned_word();
+                  next_verb();
+                } else if( sentence_number > 0 ){
+                  get_sentence(sentence_number);
+                }
+
            }
            $('#input').val('');
 

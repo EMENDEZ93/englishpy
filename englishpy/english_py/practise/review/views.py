@@ -35,6 +35,18 @@ def get_past_participle(request, present):
     return JsonResponse(data)
 
 
+def get_sentence_number(request, present):
+    verb = get_object_or_404(Present,verb=present)
+    data = {'sentence_number': len(verb.get_all_sentence())}
+    return JsonResponse(data)
+
+
+def get_sentence(request, _id, present):
+    sentence = get_object_or_404(SentencePresent,secondary_id='{}{}'.format(present, _id))
+    data = {'sentence': sentence.sentence }
+    return JsonResponse(data)
+
+
 def learned_word(request, learned_word):
     data={}
     if request.user.is_authenticated:
