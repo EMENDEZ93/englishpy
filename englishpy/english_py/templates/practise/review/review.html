@@ -3,10 +3,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Learning</title>
+    <title>Review</title>
 </head>
 <body>
-<h1>- Learning -</h1>
+<h1>- Review -</h1>
 
     <textarea style="width: 80%;" id="test"></textarea>
     <input id="word" name="" type="hidden" value="">
@@ -27,23 +27,38 @@
       alert($('#word').val());
     }
 
+    var learned_present = [];
+    var pivot = 0;
+
+    {% for learned_present in learned_present %}
+        learned_present_fill('{{learned_present}}');
+    {% endfor %}
+
+
+    function learned_present_fill(learnedpresent){
+       learned_present.push(learnedpresent);
+    }
+
+
+    function sum_pivot(){
+        pivot++;
+        if( pivot >= learned_present.length){
+            pivot = 0;
+        }
+    }
+
+
+    function show_word(){
+      alert(learned_present[pivot]);
+    }
+
 
     function next_verb(){
-      $.ajax({
-        type: 'GET',
-        url: 'next_verb',
-        dataType: 'json',
-        data:{},
-        async: false,
-        success: function (data) {
-
-           $('#word').val(data.present.verb);
-           $('#present').val(data.present.verb);
-           $("#word").attr('name', 'present');
-           $('#test').val(data.present.verb);
-
-        }
-      });
+       $('#word').val(learned_present[pivot]);
+       $('#present').val(learned_present[pivot]);
+       $("#word").attr('name', 'present');
+       $('#test').val(learned_present[pivot]);
+       sum_pivot();
     }
 
 
@@ -82,6 +97,27 @@
       });
     }
 
+
+    function get_sentence_number(){
+      $.ajax({
+        type: 'GET',
+        url: 'get_sentence_number/'+$('#present').val(),
+        dataType: 'json',
+        data:{},
+        async: false,
+        success: function (data) {
+
+           if( data.sentence_number == 0 ){
+             next_verb();
+           } else if( data.sentence_number > 0 ){
+             get_sentence(data.sentence_number);
+           }
+
+        }
+      });
+    }
+
+
     var sentence_number = 0;
     function get_sentence(sentence_number_){
       sentence_number = sentence_number_;
@@ -105,41 +141,6 @@
     }
 
 
-    function get_sentence_number(){
-      $.ajax({
-        type: 'GET',
-        url: 'get_sentence_number/'+$('#present').val(),
-        dataType: 'json',
-        data:{},
-        async: false,
-        success: function (data) {
-
-           if( data.sentence_number == 0 ){
-             learned_word();
-             next_verb();
-
-           } else if( data.sentence_number > 0 ){
-             get_sentence(data.sentence_number);
-           }
-
-        }
-      });
-    }
-
-
-    function learned_word(){
-      $.ajax({
-        type: 'GET',
-        url: 'learned_word/'+$('#present').val(),
-        dataType: 'json',
-        data:{},
-        async: false,
-        success: function (data) {
-        }
-      });
-    }
-
-
     function verify(){
        if( $('#word').val().toLowerCase() == $('#input').val().toLowerCase() && $('#input').val().toLowerCase() != ''){
 
@@ -155,7 +156,6 @@
            } else if( $("#word").attr('name') == 'sentence' ){
 
                 if( sentence_number == 0 ){
-                  learned_word();
                   next_verb();
                 } else if( sentence_number > 0 ){
                   get_sentence(sentence_number);
@@ -166,7 +166,6 @@
 
        }
     }
-
 
 </script>
 

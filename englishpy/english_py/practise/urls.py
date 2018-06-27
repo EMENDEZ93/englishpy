@@ -1,5 +1,6 @@
 from django.conf.urls import url, include
 
+from .review.review_views import review
 from .reload.reload_sentence import reload_sentence
 from .views import searcher
 from .load_topic.views import topic, topic_delete
@@ -93,6 +94,14 @@ urlpatterns = [
         regex=r'^next_sentence$',
         view=next_sentence,
         name='next_sentence'
+    ),
+
+
+
+    url(
+        regex=r'^review$',
+        view=review,
+        name='review'
     ),
 
 ]
