@@ -2,7 +2,6 @@
 from __future__ import unicode_literals
 from django.utils.translation import ugettext_lazy as _
 from django.db import models
-<<<<<<< HEAD
 from .sentence_present import SentencePresent
 from ..types import VerbTypes
 from .past import Past
@@ -35,6 +34,3 @@ class Present(models.Model):
     def get_all_sentence(self):
         #return SentencePresent.objects.filter(verb=self)
         return SentencePresent.objects.filter(verb=self).values_list('sentence', flat=True)
-=======
-from ..types import VerbTypes, TimesTypes, TopicTypes
->>>>>>> parent of bf9e46c... splitting models
