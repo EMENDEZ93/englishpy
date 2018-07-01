@@ -1,13 +1,9 @@
+from django.conf import settings
+from django.http import JsonResponse
 from django.shortcuts import render, get_object_or_404
 
+from ..models.models import Present, LearnedPresent, SentencePresent
 from ..types import VerbTypes
-from .forms import VerbForm
-from ..models import Present, LearnedPresent, SentencePresent
-from django.http import JsonResponse
-from random import randint
-from django.db.models import Q
-import os
-from django.conf import settings
 
 
 def home(request, template_name='practise/review/home.html'):

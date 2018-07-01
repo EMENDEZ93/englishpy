@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
+
 from django.contrib import admin
-from .models import Present, PastParticiple, Past, Routine, Topic, Vocabulary, LearnedPresent, SentencePresent
+
+from .models.models import Present, PastParticiple, Past, Routine, Topic, Vocabulary, LearnedPresent, SentencePresent
 
 
 class PresentAdmin(admin.ModelAdmin):

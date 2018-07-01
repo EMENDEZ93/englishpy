@@ -1,8 +1,9 @@
 import os
+
 import xlrd
 from django.shortcuts import render
 
-from ..models import Present
+from ..models.models import Present
 
 
 def reload_phrasal(request, template_name='xlsx.html'):

@@ -1,5 +1,6 @@
-from django.shortcuts import render, get_object_or_404
-from ..models import LearnedPresent
+from django.shortcuts import render
+
+from ..models.models import LearnedPresent
 
 
 def review(request, template_name='practise/review/review.html'):

@@ -1,6 +1,6 @@
 from django import forms
 
-from ..models import Present
+from ..models.models import Present
 
 
 class VerbForm(forms.ModelForm):
