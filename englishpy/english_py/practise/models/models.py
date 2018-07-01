@@ -8,36 +8,9 @@ from django.db import models
 from ..types import VerbTypes, TimesTypes, TopicTypes
 
 
-class Present(models.Model):
-    verb = models.CharField(_('Present'), max_length=255, unique=True)
-    category = models.CharField(_('Type'),max_length=255, default=VerbTypes.REGULAR)
-
-    def __str__(self):
-        return self.verb
-
-    def past(self):
-        past = Past.objects.get(present=self)
-        return past.past_object()
-
-    def past_participle(self):
-        past_participle = PastParticiple.objects.get(present=self)
-        return past_participle.past_participle_object()
-
-    def present_object(self):
-        data = {
-            'verb':self.verb,
-            'audio':'media/english/verb/present/{}.mp3'.format(self.verb),
-            'category':self.category,
-        }
-        return data
-
-    def get_all_sentence(self):
-        #return SentencePresent.objects.filter(verb=self)
-        return SentencePresent.objects.filter(verb=self).values_list('sentence', flat=True)
-
 class Past(models.Model):
     verb = models.CharField(_('Past'), max_length=255, unique=True)
-    present = models.ForeignKey(Present, verbose_name=_('Present'))
+    present = models.ForeignKey('Present', verbose_name=_('Present'))
 
     def __str__(self):
         return self.verb
@@ -52,7 +25,7 @@ class Past(models.Model):
 
 class PastParticiple(models.Model):
     verb = models.CharField(_('Past participle'), max_length=255, unique=True)
-    present = models.ForeignKey(Present, verbose_name=_('Present'))
+    present = models.ForeignKey('Present', verbose_name=_('Present'))
 
     def __str__(self):
         return self.verb
@@ -109,7 +82,7 @@ class LearnedPresent(models.Model):
 
 
 class SentencePresent(models.Model):
-    verb = models.ForeignKey(Present, verbose_name=_('Present'))
+    verb = models.ForeignKey('Present', verbose_name=_('Present'))
     sentence = models.TextField(_('Sentence'), unique=True)
     secondary_id = models.CharField(_('Secondary Id'),max_length=50)
     auxiliary = models.CharField(_('Auxiliary'),max_length=50)

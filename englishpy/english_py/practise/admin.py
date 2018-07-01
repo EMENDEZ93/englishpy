@@ -3,9 +3,10 @@ from __future__ import unicode_literals
 
 from django.contrib import admin
 
-from .models.models import Present, PastParticiple, Past, Routine, Topic, Vocabulary, LearnedPresent, SentencePresent
+from .models.models import PastParticiple, Past, Routine, Topic, Vocabulary, LearnedPresent, SentencePresent
 from .models import PhrasalVerb
 from .models import SentencePhrasalVerb
+from .models.verb.present import Present
 
 
 class PresentAdmin(admin.ModelAdmin):

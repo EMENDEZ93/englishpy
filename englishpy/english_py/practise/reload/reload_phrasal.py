@@ -5,7 +5,6 @@ from django.shortcuts import render
 
 from ..models import PhrasalVerb
 from ..models import SentencePhrasalVerb
-from ..models.models import Present
 
 
 def reload_phrasal(request, template_name='xlsx.html'):
@@ -36,6 +35,9 @@ def reload_phrasal(request, template_name='xlsx.html'):
                         secondary_id =reading.cell(row,4).value,
                         auxiliary =reading.cell(row, 1).value
                     )
+
+
+    data['verbos'] = added_verbs
 
 
     return render(request,template_name, data)
