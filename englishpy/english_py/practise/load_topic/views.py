@@ -1,9 +1,14 @@
 from django.shortcuts import render, get_object_or_404
 
+<<<<<<< HEAD
 from ..models.vocabulary import Vocabulary
 from ..types import TopicTypes
 from ..models.present import Present
 from ..models.topic import Topic
+=======
+from ..models.models import Topic, Present, Vocabulary
+from ..types import TopicTypes
+>>>>>>> parent of bf9e46c... splitting models
 
 def topic(request, id_topic, template_name='practise/load_topic/topic.html', ):
     data = dict()

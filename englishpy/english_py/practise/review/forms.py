@@ -1,6 +1,7 @@
 from django import forms
 
-from ..models.present import Present
+from ..models.models import Present
+
 
 class VerbForm(forms.ModelForm):
     class Meta:

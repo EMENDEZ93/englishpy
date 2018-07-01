@@ -3,6 +3,7 @@ from __future__ import unicode_literals
 
 from django.contrib import admin
 
+<<<<<<< HEAD
 from .models.sentence_present import SentencePresent
 from .models.present import Present
 from .models.past import Past
@@ -11,6 +12,9 @@ from .models.routine import Routine
 from .models.topic import Topic
 from .models.vocabulary import Vocabulary
 from .models.learned_present import LearnedPresent
+=======
+from .models.models import Present, PastParticiple, Past, Routine, Topic, Vocabulary, LearnedPresent, SentencePresent
+>>>>>>> parent of bf9e46c... splitting models
 
 
 class PresentAdmin(admin.ModelAdmin):

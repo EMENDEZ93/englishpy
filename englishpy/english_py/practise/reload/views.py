@@ -3,9 +3,13 @@ import os
 import xlrd
 from django.shortcuts import render
 
+<<<<<<< HEAD
 from ..models.past_participle import PastParticiple
 from ..models.present import Present
 from ..models.past import Past
+=======
+from ..models.models import Present, Past, PastParticiple
+>>>>>>> parent of bf9e46c... splitting models
 
 
 def reload(request, template_name='xlsx.html'):

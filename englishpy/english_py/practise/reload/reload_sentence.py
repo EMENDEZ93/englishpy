@@ -3,8 +3,12 @@ import os
 import xlrd
 from django.shortcuts import render, get_object_or_404
 
+<<<<<<< HEAD
 from ..models.sentence_present import SentencePresent
 from ..models.present import Present
+=======
+from ..models.models import SentencePresent, Present
+>>>>>>> parent of bf9e46c... splitting models
 
 
 def reload_sentence(request, template_name='sentence.html'):

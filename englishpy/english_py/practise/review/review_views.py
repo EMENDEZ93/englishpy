@@ -1,6 +1,10 @@
 from django.shortcuts import render
 
+<<<<<<< HEAD
 from ..models.learned_present import LearnedPresent
+=======
+from ..models.models import LearnedPresent
+>>>>>>> parent of bf9e46c... splitting models
 
 
 def review(request, template_name='practise/review/review.html'):
