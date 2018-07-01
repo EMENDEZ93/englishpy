@@ -10,23 +10,6 @@ from .routine import Routine
 from ..types import VerbTypes, TimesTypes, TopicTypes
 
 
-class LearnedWord(models.Model):
-    word = models.CharField(_('Palabra aprendida'), max_length=255, null=True, blank=True)
-    topic = models.ForeignKey('Topic', verbose_name=_('Tema'))
-
-    def __str__(self):
-        return self.word
-
-
-class Vocabulary(models.Model):
-    word = models.CharField(_('Palabra'), max_length=255)
-    routine = models.ForeignKey('Topic', verbose_name=_('Tema'))
-    learned = models.BooleanField(_('¿Aprendido?'), default=False)
-
-    def __str__(self):
-        return self.word
-
-
 class LearnedPresent(models.Model):
     user = models.ForeignKey(User, verbose_name=_('usuario'))
     verb = models.CharField(_('Present'), max_length=255, unique=True)
