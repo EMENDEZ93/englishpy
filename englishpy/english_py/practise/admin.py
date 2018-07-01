@@ -3,8 +3,10 @@ from __future__ import unicode_literals
 
 from django.contrib import admin
 
-from .models.mo import PastParticiple, Past, Routine, Topic, Vocabulary, LearnedPresent, SentencePresent
+from .models.mo import PastParticiple, Routine, Topic, Vocabulary, LearnedPresent, SentencePresent
 from .models.present import Present
+from .models.past import Past
+
 
 class PresentAdmin(admin.ModelAdmin):
     list_display = ('verb', 'category',)
