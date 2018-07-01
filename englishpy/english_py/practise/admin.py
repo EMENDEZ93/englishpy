@@ -4,6 +4,8 @@ from __future__ import unicode_literals
 from django.contrib import admin
 
 from .models.models import Present, PastParticiple, Past, Routine, Topic, Vocabulary, LearnedPresent, SentencePresent
+from .models.phrasal_verb.phrasal_verb import PhrasalVerb
+from .models.phrasal_verb.sentence_phrasal_verb import SentencePhrasalVerb
 
 
 class PresentAdmin(admin.ModelAdmin):
@@ -52,3 +54,15 @@ class SentencePresentAdmin(admin.ModelAdmin):
     list_display = ('verb', 'sentence', 'secondary_id', 'auxiliary')
 
 admin.site.register(SentencePresent, SentencePresentAdmin)
+
+
+class PhrasalVerbAdmin(admin.ModelAdmin):
+    list_display = ('phrasal_verb','category')
+
+admin.site.register(PhrasalVerb, PhrasalVerbAdmin)
+
+
+class SentencePhrasalVerbAdmin(admin.ModelAdmin):
+    list_display = ('phrasal_verb', 'sentence', 'secondary_id', 'auxiliary',)
+
+admin.site.register(SentencePhrasalVerb, SentencePhrasalVerbAdmin)

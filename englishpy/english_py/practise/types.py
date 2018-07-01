@@ -3,9 +3,11 @@
 class VerbTypes():
     IRREGULAR = 'Irregular'
     REGULAR = 'Regular'
+    PHRASAL_VERB = 'Phrasal_verb'
     TYPES = (
         (IRREGULAR, IRREGULAR),
         (REGULAR, REGULAR),
+        (PHRASAL_VERB, PHRASAL_VERB)
     )
 
 
