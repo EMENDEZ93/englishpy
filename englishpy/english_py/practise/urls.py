@@ -1,5 +1,6 @@
 from django.conf.urls import url, include
 
+from .reload.reload_phrasal import reload_phrasal
 from .review.review_views import review
 from .reload.reload_sentence import reload_sentence
 from .views import searcher
@@ -61,6 +62,13 @@ urlpatterns = [
         view=reload_other_time,
         name='reload_other_time'
     ),
+    url(
+        regex=r'^phrasal$',
+        view=reload_phrasal,
+        name='reload_phrasal'
+    ),
+
+
     url(
         regex=r'^delete_other$',
         view=delete_all_other,
