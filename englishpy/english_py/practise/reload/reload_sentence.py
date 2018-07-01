@@ -3,7 +3,7 @@ import os
 import xlrd
 from django.shortcuts import render, get_object_or_404
 
-from ..models.mo import SentencePresent
+from ..models.sentence_present import SentencePresent
 from ..models.present import Present
 
 
