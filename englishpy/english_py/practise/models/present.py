@@ -2,9 +2,11 @@
 from __future__ import unicode_literals
 from django.utils.translation import ugettext_lazy as _
 from django.db import models
-from .mo import PastParticiple, SentencePresent
+from .mo import SentencePresent
 from ..types import VerbTypes
 from .past import Past
+from .past_participle import PastParticiple
+
 
 class Present(models.Model):
     verb = models.CharField(_('Present'), max_length=255, unique=True)
