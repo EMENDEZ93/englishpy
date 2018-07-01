@@ -3,8 +3,7 @@ import os
 import xlrd
 from django.shortcuts import render, get_object_or_404
 
-from ..models.sentence_present import SentencePresent
-from ..models.present import Present
+from ..models.models import SentencePresent, Present
 
 
 def reload_sentence(request, template_name='sentence.html'):

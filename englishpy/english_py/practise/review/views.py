@@ -2,10 +2,8 @@ from django.conf import settings
 from django.http import JsonResponse
 from django.shortcuts import render, get_object_or_404
 
-from ..models.sentence_present import SentencePresent
+from ..models.models import Present, LearnedPresent, SentencePresent
 from ..types import VerbTypes
-from ..models.present import Present
-from ..models.learned_present import LearnedPresent
 
 
 def home(request, template_name='practise/review/home.html'):
