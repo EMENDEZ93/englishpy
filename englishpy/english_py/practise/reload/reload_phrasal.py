@@ -3,7 +3,7 @@ import os
 import xlrd
 from django.shortcuts import render
 
-from ..models.models import Present
+from ..models.present import Present
 
 
 def reload_phrasal(request, template_name='xlsx.html'):

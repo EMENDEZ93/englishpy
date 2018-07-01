@@ -3,7 +3,8 @@ import os
 import xlrd
 from django.shortcuts import render
 
-from ..models.models import Present, Past, PastParticiple
+from ..models.mo import Past, PastParticiple
+from ..models.present import Present
 
 
 def reload(request, template_name='xlsx.html'):
