@@ -8,3 +8,10 @@ sudo docker-compose -f docker-compose.yml run django python englishpy/manage.py 
 
 sudo docker-compose run django python3 project/manage.py startapp apps ./project/app/
 sudo chmod -R 777 project/apps/
+
+
+sudo docker rm $(sudo docker ps -a -q)
+sudo docker rmi $(sudo docker images -q)
+
+
+
