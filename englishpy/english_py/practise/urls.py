@@ -1,6 +1,6 @@
 from django.conf.urls import url, include
 
-from .review.review_phrasal_views import learning_phrasal
+from .review.review_phrasal_views import learning_phrasal, next_phrasal
 from .reload.reload_phrasal import reload_phrasal
 from .review.review_views import review
 from .reload.reload_sentence import reload_sentence
@@ -117,9 +117,9 @@ urlpatterns = [
         name='learning_phrasal'
     ),
     url(
-        regex=r'^next_verb$',
-        view=next_verb,
-        name='next_verb'
+        regex=r'^next_phrasal$',
+        view=next_phrasal,
+        name='next_phrasal'
     ),
 
 

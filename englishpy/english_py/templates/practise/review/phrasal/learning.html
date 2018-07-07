@@ -9,78 +9,43 @@
 <h1>- Learning Phrasal -</h1>
 
     <textarea style="width: 80%;" id="test"></textarea>
-    <input id="word" name="" type="hidden" value="">
+    <input id="phrasal" name="" type="hidden" value="">
     <input id="present" name="present" type="hidden" value="">
     <audio id="audio"><source id="present_source" src="" type="audio/mpeg"></audio>
     <input type="text" style="width: 80%;" id="input" onkeyup="verify()" placeholder="Search for names.." title="Type in a name">
 
-    <button id="load" onclick="next_verb()" >load</button>
-    <button id="show" onclick="show_word()">Show hidden fields</button>
-    <button id="learned"  onclick="learned_word()" >learned</button>
+    <button id="load" onclick="next_phrasal()" >load</button>
+    <button id="show" onclick="show_phrasal()">Show hidden fields</button>
+    <button id="learned"  onclick="learned_phrasal()" >learned</button>
 
 </body>
 
 <script src="{% static 'eg/js/jquery-3.1.1.min.js' %}"></script>
 <script>
 
-    function show_word(){
-      alert($('#word').val());
+    function show_phrasal(){
+      alert($('#phrasal').val());
     }
 
 
-    function next_verb(){
+    function next_phrasal(){
       $.ajax({
         type: 'GET',
-        url: 'next_verb',
+        url: 'next_phrasal',
         dataType: 'json',
         data:{},
         async: false,
         success: function (data) {
 
-           $('#word').val(data.present.verb);
-           $('#present').val(data.present.verb);
-           $("#word").attr('name', 'present');
-           $('#test').val(data.present.verb);
+           $('#phrasal').val(data.phrasal);
+           $('#present').val(data.phrasal);
+           $("#phrasal").attr('name', 'phrasal');
+           $('#test').val(data.phrasal);
 
         }
       });
     }
 
-
-    function get_past(){
-      $.ajax({
-        type: 'GET',
-        url: 'get_past/'+$('#present').val(),
-        dataType: 'json',
-        data:{},
-        async: false,
-        success: function (data) {
-
-           $('#word').val(data.past.verb);
-           $("#word").attr('name', 'past');
-           $('#test').val(data.past.verb);
-
-        }
-      });
-    }
-
-
-    function get_past_participle(){
-      $.ajax({
-        type: 'GET',
-        url: 'get_past/participle/'+$('#present').val(),
-        dataType: 'json',
-        data:{},
-        async: false,
-        success: function (data) {
-
-           $('#word').val(data.past_participle.verb);
-           $("#word").attr('name', 'past_participle');
-           $('#test').val(data.past_participle.verb);
-
-        }
-      });
-    }
 
     var sentence_number = 0;
     function get_sentence(sentence_number_){
@@ -94,8 +59,8 @@
         success: function (data) {
 
 
-           $('#word').val(data.sentence);
-           $("#word").attr('name', 'sentence');
+           $('#phrasal').val(data.sentence);
+           $("#phrasal").attr('name', 'sentence');
            $('#test').val(data.sentence);
 
            sentence_number--;
@@ -115,7 +80,7 @@
         success: function (data) {
 
            if( data.sentence_number == 0 ){
-             learned_word();
+             learned_phrasal();
              next_verb();
 
            } else if( data.sentence_number > 0 ){
@@ -141,22 +106,16 @@
 
 
     function verify(){
-       if( $('#word').val().toLowerCase() == $('#input').val().toLowerCase() && $('#input').val().toLowerCase() != ''){
+       if( $('#phrasal').val().toLowerCase() == $('#input').val().toLowerCase() && $('#input').val().toLowerCase() != ''){
 
-           if( $("#word").attr('name') == 'present' ){
-             get_past();
-
-           } else if( $("#word").attr('name') == 'past' ){
-             get_past_participle();
-
-           } else if( $("#word").attr('name') == 'past_participle' ){
+           if( $("#phrasal").attr('name') == 'past_participle' ){
              get_sentence_number();
 
-           } else if( $("#word").attr('name') == 'sentence' ){
+           } else if( $("#phrasal").attr('name') == 'sentence' ){
 
                 if( sentence_number == 0 ){
                   learned_word();
-                  next_verb();
+                  next_phrasal();
                 } else if( sentence_number > 0 ){
                   get_sentence(sentence_number);
                 }
