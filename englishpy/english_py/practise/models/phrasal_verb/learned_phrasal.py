@@ -9,4 +9,4 @@ class LearnedPhrasal(models.Model):
     phrasal = models.CharField(_('phrasal'), max_length=255, unique=True)
 
     def __str__(self):
-        return self.verb
+        return self.phrasal
