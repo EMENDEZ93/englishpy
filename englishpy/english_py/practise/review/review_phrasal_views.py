@@ -12,10 +12,8 @@ def learning_phrasal(request, template_name='practise/review/phrasal/learning.ht
 
 
 def next_phrasal(request):
-    print('************ next_phrasal *************')
     phrasal = get_object_or_404(PhrasalVerb,phrasal_verb=exclude_words(request))
     data = {'phrasal': phrasal.phrasal_verb }
-    print(data)
     return JsonResponse(data)
 
 
@@ -26,7 +24,6 @@ def exclude_words(request):
 
 
 def get_sentence_phrasal_number(request, phrasal):
-    print('******get_sentence_phrasal_number*******')
     phrasal_verb = get_object_or_404(PhrasalVerb,phrasal_verb=phrasal)
     data = {'sentence_number': len(SentencePhrasalVerb.objects.filter(phrasal_verb=phrasal_verb).values_list('sentence', flat=True))}
     return JsonResponse(data)

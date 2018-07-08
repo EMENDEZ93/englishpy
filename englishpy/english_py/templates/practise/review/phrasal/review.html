@@ -3,10 +3,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Phrasal</title>
+    <title>Review Phrasal</title>
 </head>
 <body>
-<h1>- Learning Phrasal -</h1>
+<h1>- Review Phrasal -</h1>
 
     <textarea style="width: 80%;" id="test"></textarea>
     <input id="word" name="" type="hidden" value="">
@@ -15,33 +15,69 @@
     <input type="text" style="width: 80%;" id="input" onkeyup="verify()" placeholder="Search for names.." title="Type in a name">
 
     <button id="load" onclick="next_phrasal()" >load</button>
-    <button id="show" onclick="show_phrasal()">Show hidden fields</button>
-    <button id="learned"  onclick="learned_phrasal()" >learned</button>
-    <button id="next"  onclick="next()" >next</button>
+    <button id="show" onclick="show_word()">Show hidden fields</button>
+    <button id="learned"  onclick="learned_word()" >learned</button>
 
 </body>
 
 <script src="{% static 'eg/js/jquery-3.1.1.min.js' %}"></script>
 <script>
 
-    function show_phrasal(){
-      alert($('#phrasal').val());
+    function show_word(){
+      alert($('#test').val());
+    }
+
+    var learned_phrasal = [];
+    var pivot = 0;
+
+    {% for learned_phrasal in learned_phrasal %}
+        learned_phrasal_fill('{{learned_phrasal}}');
+    {% endfor %}
+
+
+    function learned_phrasal_fill(learnedphrasal){
+       learned_phrasal.push(learnedphrasal);
+    }
+
+
+    function sum_pivot(){
+        pivot++;
+        if( pivot >= learned_phrasal.length){
+            pivot = 0;
+        }
+    }
+
+
+    function show_word(){
+      alert(learned_phrasal[pivot]);
     }
 
 
     function next_phrasal(){
+       $('#word').val(learned_phrasal[pivot]);
+       $('#phrasal').val(learned_phrasal[pivot]);
+       $("#word").attr('name', 'phrasal');
+       $('#test').val(learned_phrasal[pivot]);
+       sum_pivot();
+    }
+
+
+    function get_sentence_phrasal_number(){
       $.ajax({
         type: 'GET',
-        url: 'next_phrasal',
+        url: 'get_sentence_phrasal_number/'+$('#phrasal').val(),
         dataType: 'json',
         data:{},
         async: false,
         success: function (data) {
 
-           $('#word').val(data.phrasal);
-           $('#phrasal').val(data.phrasal);
-           $("#word").attr('name', 'phrasal');
-           $('#test').val(data.phrasal);
+           if( data.sentence_number == 0 ){
+             learned_phrasal();
+             next_verb();
+
+           } else if( data.sentence_number > 0 ){
+             get_sentence(data.sentence_number);
+           }
 
         }
       });
@@ -70,46 +106,6 @@
     }
 
 
-    function get_sentence_phrasal_number(){
-      $.ajax({
-        type: 'GET',
-        url: 'get_sentence_phrasal_number/'+$('#phrasal').val(),
-        dataType: 'json',
-        data:{},
-        async: false,
-        success: function (data) {
-
-           if( data.sentence_number == 0 ){
-             learned_phrasal();
-             next_verb();
-
-           } else if( data.sentence_number > 0 ){
-             get_sentence(data.sentence_number);
-           }
-
-        }
-      });
-    }
-
-
-    function learned_phrasal(){
-      $.ajax({
-        type: 'GET',
-        url: 'learned_phrasal/'+$('#phrasal').val(),
-        dataType: 'json',
-        data:{},
-        async: false,
-        success: function (data) {
-        }
-      });
-    }
-
-
-    function next(){
-        $('#input').val($('#test').val());
-    }
-
-
     function verify(){
        if( $('#word').val().toLowerCase() == $('#input').val().toLowerCase() && $('#input').val().toLowerCase() != ''){
 
@@ -119,7 +115,6 @@
            } else if( $("#word").attr('name') == 'sentence' ){
 
                 if( sentence_number == 0 ){
-                  learned_phrasal();
                   next_phrasal();
                 } else if( sentence_number > 0 ){
                   get_sentence(sentence_number);
@@ -130,7 +125,6 @@
 
        }
     }
-
 
 </script>
 
