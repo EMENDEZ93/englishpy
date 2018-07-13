@@ -25,7 +25,8 @@
 <script>
 
     function show_phrasal(){
-      alert($('#phrasal').val());
+      alert('{{repetitions}}');
+      //alert($('#phrasal').val());
     }
 
 
@@ -80,7 +81,7 @@
         success: function (data) {
 
            if( data.sentence_number == 0 ){
-             learned_phrasal();
+             repetition();
              next_verb();
 
            } else if( data.sentence_number > 0 ){
@@ -110,6 +111,18 @@
     }
 
 
+    var repetitions = 1;
+    function repetition(){
+        if({{repetitions}} == repetitions ){
+            learned_phrasal();
+            repetitions=1;
+        } else {
+            repetitions++;
+        }
+
+    }
+
+
     function verify(){
        if( $('#word').val().toLowerCase() == $('#input').val().toLowerCase() && $('#input').val().toLowerCase() != ''){
 
@@ -119,7 +132,7 @@
            } else if( $("#word").attr('name') == 'sentence' ){
 
                 if( sentence_number == 0 ){
-                  learned_phrasal();
+                  repetition();
                   next_phrasal();
                 } else if( sentence_number > 0 ){
                   get_sentence(sentence_number);
