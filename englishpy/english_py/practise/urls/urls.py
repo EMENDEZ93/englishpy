@@ -1,16 +1,15 @@
 from django.conf.urls import url, include
 
-from .review.phrasal_verb.review_phrasal_views import review_phrasal
-from .review.review_phrasal_views import learning_phrasal, next_phrasal, get_sentence_phrasal_number, \
+from ..review.review_phrasal_views import learning_phrasal, next_phrasal, get_sentence_phrasal_number, \
     get_sentence_phrasal, learned_phrasal
-from .reload.reload_phrasal import reload_phrasal
-from .review.review_views import review
-from .reload.reload_sentence import reload_sentence
-from .views import searcher
-from .load_topic.views import topic, topic_delete
-from .review.views import home, next_verb, next_sentence, learned_word, get_past, get_past_participle, \
+from ..reload.reload_phrasal import reload_phrasal
+from ..review.review_views import review
+from ..reload.reload_sentence import reload_sentence
+from ..views import searcher
+from ..load_topic.views import topic, topic_delete
+from ..review.views import home, next_verb, next_sentence, learned_word, get_past, get_past_participle, \
     get_sentence_number, get_sentence
-from .reload.views import reload, delete_all_verb, reload_other_time, delete_all_other
+from ..reload.views import reload, delete_all_verb, reload_other_time, delete_all_other
 
 
 urlpatterns = [
@@ -141,12 +140,5 @@ urlpatterns = [
         view=learned_phrasal,
         name='learned_phrasal'
     ),
-
-    url(
-        regex=r'^review_phrasal$',
-        view=review_phrasal,
-        name='review_phrasal'
-    ),
-
 
 ]
