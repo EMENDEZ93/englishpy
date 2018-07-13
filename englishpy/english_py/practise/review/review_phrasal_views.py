@@ -1,11 +1,11 @@
 from django.http import JsonResponse
 from django.shortcuts import render, get_object_or_404
 
-from ..types import TopicTypes
-from ..models.topic.topic import Topic
-from ..models.phrasal_verb.sentence_phrasal_verb import SentencePhrasalVerb
-from ..models.phrasal_verb.learned_phrasal import LearnedPhrasal
+from ..models.learned.learned_phrasal import LearnedPhrasal
 from ..models.phrasal_verb.phrasal_verb import PhrasalVerb
+from ..models.phrasal_verb.sentence_phrasal_verb import SentencePhrasalVerb
+from ..models.topic.topic import Topic
+from ..types import TopicTypes
 
 
 def learning_phrasal(request, template_name='practise/review/phrasal/learning.html'):

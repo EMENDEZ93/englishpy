@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-from ...models.phrasal_verb.learned_phrasal import LearnedPhrasal
+from ...models.learned.learned_phrasal import LearnedPhrasal
 
 
 def review_phrasal(request, template_name='practise/review/phrasal/review.html'):

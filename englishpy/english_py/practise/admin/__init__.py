@@ -8,4 +8,4 @@ from .learned_present_admin import LearnedPresentAdmin
 from .sentence_present_admin import SentencePresentAdmin
 from .phrasal_verb_admin import PhrasalVerbAdmin
 from .sentence_phrasal_verb_admin import SentencePhrasalVerbAdmin
-from .learned_phrasal_Admin import LearnedPhrasalAdmin
+from .learned_phrasal_admin import LearnedPhrasalAdmin

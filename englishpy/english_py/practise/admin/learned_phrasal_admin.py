@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
+
 from django.contrib import admin
-from ..models.phrasal_verb.learned_phrasal import LearnedPhrasal
+
+from ..models.learned.learned_phrasal import LearnedPhrasal
 
 
 class LearnedPhrasalAdmin(admin.ModelAdmin):
