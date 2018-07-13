@@ -9,14 +9,6 @@ from .models.phrasal_verb.sentence_phrasal_verb import SentencePhrasalVerb
 from .models.verb.sentence_present import  SentencePresent
 from .models.learned.learned_present import LearnedPresent
 from .models.vocabulary.vocabulary import  Vocabulary
-from .models.routine.routine import Routine
-
-
-
-class RoutineAdmin(admin.ModelAdmin):
-    list_display = ('name',)
-
-admin.site.register(Routine, RoutineAdmin)
 
 
 class TopicAdmin(admin.ModelAdmin):
