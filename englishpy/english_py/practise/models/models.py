@@ -23,11 +23,3 @@ class Topic(models.Model):
 
     def __str__(self):
         return self.name
-
-
-class LearnedWord(models.Model):
-    word = models.CharField(_('Palabra aprendida'), max_length=255, null=True, blank=True)
-    topic = models.ForeignKey(Topic, verbose_name=_('Tema'))
-
-    def __str__(self):
-        return self.word
