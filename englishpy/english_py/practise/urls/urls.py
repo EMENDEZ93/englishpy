@@ -1,6 +1,5 @@
 from django.conf.urls import url, include
 
-from ..reload.reload_sentence import reload_sentence
 from ..views import searcher
 from ..load_topic.views import topic, topic_delete
 from ..review.views import home, next_verb, next_sentence, learned_word, get_past, get_past_participle, \
@@ -86,11 +85,6 @@ urlpatterns = [
         name='searcher'
     ),
 
-    url(
-        regex=r'^sentence$',
-        view=reload_sentence,
-        name='reload_sentence'
-    ),
     url(
         regex=r'^next_sentence$',
         view=next_sentence,
