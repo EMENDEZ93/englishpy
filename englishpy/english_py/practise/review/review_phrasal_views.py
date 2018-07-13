@@ -10,8 +10,7 @@ from ..models.phrasal_verb.phrasal_verb import PhrasalVerb
 
 def learning_phrasal(request, template_name='practise/review/phrasal/learning.html'):
     data={}
-    topic = Topic.objects.get(name=TopicTypes.LEARNED_PHRASAL)
-    data['repetitions']= topic.repetitions
+    data['repetitions']= repetitions_to_user(request)
     return render(request, template_name, data)
 
 
@@ -50,3 +49,9 @@ def learned_phrasal(request, learned_phrasal):
                 )
 
     return JsonResponse(data)
+
+
+def repetitions_to_user(request):
+    if request.user.is_authenticated:
+        topic = Topic.objects.get(name=TopicTypes.LEARNED_PHRASAL)
+    return topic.repetitions

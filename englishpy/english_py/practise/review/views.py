@@ -8,8 +8,7 @@ from ..models.verb.present import Present
 
 def home(request, template_name='practise/review/home.html'):
     data={}
-    topic = Topic.objects.get(name=TopicTypes.LEARNED_PRESENT)
-    data['repetitions']= topic.repetitions
+    data['repetitions']= repetitions_to_user(request)
     return render(request, template_name, data)
 
 
@@ -71,3 +70,8 @@ def next_sentence(request):
 
     return JsonResponse(data)
 
+
+def repetitions_to_user(request):
+    if request.user.is_authenticated:
+        topic = Topic.objects.get(name=TopicTypes.LEARNED_PRESENT)
+    return topic.repetitions
