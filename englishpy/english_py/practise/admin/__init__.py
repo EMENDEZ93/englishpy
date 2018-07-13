@@ -6,3 +6,4 @@ from .topic_admin import TopicAdmin
 from .vocabulary_admin import VocabularyAdmin
 from .learned_present_admin import LearnedPresentAdmin
 from .sentence_present_admin import SentencePresentAdmin
+from .phrasal_verb_admin import PhrasalVerbAdmin

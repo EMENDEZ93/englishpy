@@ -4,15 +4,7 @@ from django.contrib import admin
 
 from .models.phrasal_verb.learned_phrasal import LearnedPhrasal
 
-from .models.phrasal_verb.phrasal_verb import PhrasalVerb
 from .models.phrasal_verb.sentence_phrasal_verb import SentencePhrasalVerb
-
-
-
-class PhrasalVerbAdmin(admin.ModelAdmin):
-    list_display = ('phrasal_verb',)
-
-admin.site.register(PhrasalVerb, PhrasalVerbAdmin)
 
 
 class SentencePhrasalVerbAdmin(admin.ModelAdmin):
