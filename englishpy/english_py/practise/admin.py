@@ -1,25 +1,17 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
-
 from django.contrib import admin
 
 from .models.phrasal_verb.learned_phrasal import LearnedPhrasal
 from .models.topic.topic import Topic
 from .models.phrasal_verb.phrasal_verb import PhrasalVerb
 from .models.phrasal_verb.sentence_phrasal_verb import SentencePhrasalVerb
-from .models.verb.present import Present
 from .models.verb.past import Past
 from .models.verb.past_participle import PastParticiple
 from .models.verb.sentence_present import  SentencePresent
 from .models.learned.learned_present import LearnedPresent
 from .models.vocabulary.vocabulary import  Vocabulary
 from .models.routine.routine import Routine
-
-
-class PresentAdmin(admin.ModelAdmin):
-    list_display = ('verb', 'category',)
-
-admin.site.register(Present, PresentAdmin)
 
 
 class PastAdmin(admin.ModelAdmin):
