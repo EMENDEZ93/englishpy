@@ -2,7 +2,7 @@
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 from ...types import VerbTypes
-from ..models import  SentencePresent
+from ..verb.sentence_present import  SentencePresent
 from ..verb.past import Past
 from ..verb.past_participle import PastParticiple
 
