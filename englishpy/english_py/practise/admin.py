@@ -6,17 +6,11 @@ from .models.phrasal_verb.learned_phrasal import LearnedPhrasal
 from .models.topic.topic import Topic
 from .models.phrasal_verb.phrasal_verb import PhrasalVerb
 from .models.phrasal_verb.sentence_phrasal_verb import SentencePhrasalVerb
-from .models.verb.past_participle import PastParticiple
 from .models.verb.sentence_present import  SentencePresent
 from .models.learned.learned_present import LearnedPresent
 from .models.vocabulary.vocabulary import  Vocabulary
 from .models.routine.routine import Routine
 
-
-class PastParticipleAdmin(admin.ModelAdmin):
-    list_display = ('verb', 'present',)
-
-admin.site.register(PastParticiple, PastParticipleAdmin)
 
 
 class RoutineAdmin(admin.ModelAdmin):
