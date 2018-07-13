@@ -5,8 +5,8 @@ from django.contrib import admin
 
 from .models.phrasal_verb.learned_phrasal import LearnedPhrasal
 from .models.topic.topic import Topic
-from .models import PhrasalVerb
-from .models import SentencePhrasalVerb
+from .models.phrasal_verb.phrasal_verb import PhrasalVerb
+from .models.phrasal_verb.sentence_phrasal_verb import SentencePhrasalVerb
 from .models.verb.present import Present
 from .models.verb.past import Past
 from .models.verb.past_participle import PastParticiple
