@@ -7,14 +7,7 @@ from .models.phrasal_verb.learned_phrasal import LearnedPhrasal
 from .models.phrasal_verb.phrasal_verb import PhrasalVerb
 from .models.phrasal_verb.sentence_phrasal_verb import SentencePhrasalVerb
 from .models.verb.sentence_present import  SentencePresent
-from .models.learned.learned_present import LearnedPresent
 
-
-
-class LearnedPresentAdmin(admin.ModelAdmin):
-    list_display = ('user', 'verb', 'category')
-
-admin.site.register(LearnedPresent, LearnedPresentAdmin)
 
 
 class SentencePresentAdmin(admin.ModelAdmin):
