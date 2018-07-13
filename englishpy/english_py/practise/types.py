@@ -23,7 +23,16 @@ class TimesTypes():
 class TopicTypes():
     DEFAULT = '--------------------'
     VERBS = 'VERBS'
+    LEARNED_WORD = 'LEARNED WORD'
+    VOCABULARY = 'VOCABULARY'
+    LEARNED_PRESENT = 'LEARNED PRESENT'
+    LEARNED_PHRASAL = 'LEARNED PHRASAL'
+
     TYPES = (
         (VERBS, VERBS),
         (DEFAULT, DEFAULT),
+        (LEARNED_WORD, LEARNED_WORD),
+        (VOCABULARY, VOCABULARY),
+        (LEARNED_PRESENT, LEARNED_PRESENT),
+        (LEARNED_PHRASAL, LEARNED_PHRASAL),
     )

@@ -2,14 +2,14 @@ from django.conf import settings
 from django.http import JsonResponse
 from django.shortcuts import render, get_object_or_404
 
-from ..models.models import LearnedPresent, SentencePresent
-from ..types import VerbTypes
+from ..models.models import LearnedPresent, SentencePresent, Topic
+from ..types import VerbTypes, TopicTypes
 from ..models.verb.present import Present
 
 def home(request, template_name='practise/review/home.html'):
     data={}
-    print(settings.MEDIA_URL)
-    data['audio'] = 'media/english/verb/present/work.mp3'
+    topic = Topic.objects.get(name=TopicTypes.LEARNED_PRESENT)
+    data['repetitions']= topic.repetitions
     return render(request, template_name, data)
 
 
