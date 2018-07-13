@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-from ..models.models import LearnedPresent
+from ..models.learned.learned_present import LearnedPresent
 
 
 def review(request, template_name='practise/review/review.html'):

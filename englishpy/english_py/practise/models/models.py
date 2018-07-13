@@ -40,12 +40,3 @@ class Vocabulary(models.Model):
 
     def __str__(self):
         return self.word
-
-
-class LearnedPresent(models.Model):
-    user = models.ForeignKey(User, verbose_name=_('usuario'))
-    verb = models.CharField(_('Present'), max_length=255, unique=True)
-    category = models.CharField(_('Type'),max_length=255, default=VerbTypes.REGULAR)
-
-    def __str__(self):
-        return self.verb
