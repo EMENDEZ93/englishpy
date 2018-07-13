@@ -8,13 +8,7 @@ from .models.phrasal_verb.phrasal_verb import PhrasalVerb
 from .models.phrasal_verb.sentence_phrasal_verb import SentencePhrasalVerb
 from .models.verb.sentence_present import  SentencePresent
 from .models.learned.learned_present import LearnedPresent
-from .models.vocabulary.vocabulary import  Vocabulary
 
-
-class VocabularyAdmin(admin.ModelAdmin):
-    list_display = ('word', 'routine', 'learned',)
-
-admin.site.register(Vocabulary, VocabularyAdmin)
 
 
 class LearnedPresentAdmin(admin.ModelAdmin):
