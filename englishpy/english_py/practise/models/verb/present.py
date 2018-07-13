@@ -2,8 +2,10 @@
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 from ...types import VerbTypes
-from ..models import PastParticiple, SentencePresent
+from ..models import  SentencePresent
 from ..verb.past import Past
+from ..verb.past_participle import PastParticiple
+
 
 class Present(models.Model):
     verb = models.CharField(_('Present'), max_length=255, unique=True)

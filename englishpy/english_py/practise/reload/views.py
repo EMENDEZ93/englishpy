@@ -3,7 +3,7 @@ import os
 import xlrd
 from django.shortcuts import render
 
-from ..models.models import PastParticiple
+from ..models.verb.past_participle import PastParticiple
 from ..models.verb.present import Present
 from ..models.verb.past import Past
 

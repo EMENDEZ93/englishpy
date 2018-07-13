@@ -4,11 +4,12 @@ from __future__ import unicode_literals
 from django.contrib import admin
 
 from .models.phrasal_verb.learned_phrasal import LearnedPhrasal
-from .models.models import PastParticiple, Routine, Topic, Vocabulary, LearnedPresent, SentencePresent
+from .models.models import Routine, Topic, Vocabulary, LearnedPresent, SentencePresent
 from .models import PhrasalVerb
 from .models import SentencePhrasalVerb
 from .models.verb.present import Present
 from .models.verb.past import Past
+from .models.verb.past_participle import PastParticiple
 
 class PresentAdmin(admin.ModelAdmin):
     list_display = ('verb', 'category',)

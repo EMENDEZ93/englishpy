@@ -8,21 +8,6 @@ from django.db import models
 from ..types import VerbTypes, TimesTypes, TopicTypes
 
 
-class PastParticiple(models.Model):
-    verb = models.CharField(_('Past participle'), max_length=255, unique=True)
-    present = models.ForeignKey('Present', verbose_name=_('Present'))
-
-    def __str__(self):
-        return self.verb
-
-    def past_participle_object(self):
-        data = {
-            'verb':self.verb,
-            'audio':'media/english/verb/past_participle/{}.mp3'.format(self.verb)
-        }
-        return data
-
-
 class Routine(models.Model):
     name = models.CharField(_('Nombre de la rutina'), max_length=255, unique=True)
     user = models.ForeignKey(User, verbose_name=_('Usuario'), null=True, blank=True)
