@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 from django.contrib import admin
 
 from .models.phrasal_verb.learned_phrasal import LearnedPhrasal
-from .models.models import Topic
+from .models.topic.topic import Topic
 from .models import PhrasalVerb
 from .models import SentencePhrasalVerb
 from .models.verb.present import Present

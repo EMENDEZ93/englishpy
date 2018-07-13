@@ -11,3 +11,5 @@ from .learned.learned_present import LearnedPresent
 from .vocabulary.vocabulary import Vocabulary
 
 from .routine.routine import Routine
+
+from .topic.topic import Topic

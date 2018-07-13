@@ -2,7 +2,7 @@ from django.http import JsonResponse
 from django.shortcuts import render, get_object_or_404
 
 from ..types import TopicTypes
-from ..models.models import Topic
+from ..models.topic.topic import Topic
 from ..models.phrasal_verb.sentence_phrasal_verb import SentencePhrasalVerb
 from ..models.phrasal_verb.learned_phrasal import LearnedPhrasal
 from ..models.phrasal_verb.phrasal_verb import PhrasalVerb

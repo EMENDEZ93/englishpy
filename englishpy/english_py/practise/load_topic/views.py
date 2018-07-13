@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from ..models.models import Topic
+from ..models.topic.topic import Topic
 from ..types import TopicTypes
 from ..models.verb.present import Present
 from ..models.vocabulary.vocabulary import Vocabulary
