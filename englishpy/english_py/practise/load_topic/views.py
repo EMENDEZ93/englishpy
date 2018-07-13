@@ -1,8 +1,9 @@
 from django.shortcuts import render, get_object_or_404
-
-from ..models.models import Topic, Vocabulary
+from ..models.models import Topic
 from ..types import TopicTypes
 from ..models.verb.present import Present
+from ..models.vocabulary.vocabulary import Vocabulary
+
 
 def topic(request, id_topic, template_name='practise/load_topic/topic.html', ):
     data = dict()

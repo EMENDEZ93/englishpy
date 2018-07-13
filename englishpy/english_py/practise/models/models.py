@@ -31,12 +31,3 @@ class LearnedWord(models.Model):
 
     def __str__(self):
         return self.word
-
-
-class Vocabulary(models.Model):
-    word = models.CharField(_('Palabra'), max_length=255)
-    routine = models.ForeignKey(Topic, verbose_name=_('Tema'))
-    learned = models.BooleanField(_('¿Aprendido?'), default=False)
-
-    def __str__(self):
-        return self.word
