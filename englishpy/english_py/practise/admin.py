@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 from django.contrib import admin
 
 from .models.phrasal_verb.learned_phrasal import LearnedPhrasal
-from .models.models import Routine, Topic
+from .models.models import Topic
 from .models import PhrasalVerb
 from .models import SentencePhrasalVerb
 from .models.verb.present import Present
@@ -13,6 +13,7 @@ from .models.verb.past_participle import PastParticiple
 from .models.verb.sentence_present import  SentencePresent
 from .models.learned.learned_present import LearnedPresent
 from .models.vocabulary.vocabulary import  Vocabulary
+from .models.routine.routine import Routine
 
 
 class PresentAdmin(admin.ModelAdmin):
