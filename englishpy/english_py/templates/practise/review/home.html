@@ -1,24 +1,55 @@
+{% extends "practise/base.html" %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Learning</title>
-</head>
-<body>
-<h1>- Learning -</h1>
 
-    <textarea style="width: 80%;" id="test"></textarea>
-    <input id="word" name="" type="hidden" value="">
-    <input id="present" name="present" type="hidden" value="">
-    <audio id="audio"><source id="present_source" src="" type="audio/mpeg"></audio>
-    <input type="text" style="width: 80%;" id="input" onkeyup="verify()" placeholder="Search for names.." title="Type in a name">
+{% block main %}
+    <div id="colorlib-main">
+			<div class="colorlib-blog">
+				<div class="container-wrap">
+					<div class="col-md-9">
+						<div class="content-wrap">
+							<div class="row">
+								<div class="col-md-12 animate-box">
+									<div class="archives">
+										<p class="tag"><span>Fashion</span></p>
+										<h4><a id="test" href="#">Makeup tutorial tips in the month of January 2018</a></h4>
 
-    <button id="load" onclick="next_verb()" >load</button>
-    <button id="show" onclick="show_word()">Show hidden fields</button>
-    <button id="learned"  onclick="learned_word()" >learned</button>
+                                        <input id="word" name="" type="hidden" value="">
+                                        <input id="present" name="present" type="hidden" value="">
+                                        <audio id="audio"><source id="present_source" src="" type="audio/mpeg"></audio>
+                                        <input type="text" style="width: 80%;" id="input" onkeyup="verify()" placeholder="Search for names.." title="Type in a name">
+                                        <button id="load" onclick="next_verb()" >load</button>
+                                        <button id="show" onclick="show_word()">Show hidden fields</button>
+                                        <button id="learned"  onclick="learned_word()" >learned</button>
 
-</body>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 sticky-parent">
+						<div class="sidebar" id="sticky_item">
+							<div class="side animate-box">
+							</div>
+							<div class="side animate-box">
+								<h2 class="sidebar-heading">Categories</h2>
+								<p>
+									<ul class="category">
+										<li><a href="#"><i class="icon-check"></i> Home</a></li>
+										<li><a href="#"><i class="icon-check"></i> About Me</a></li>
+										<li><a href="#"><i class="icon-check"></i> Blog</a></li>
+										<li><a href="#"><i class="icon-check"></i> Travel</a></li>
+										<li><a href="#"><i class="icon-check"></i> Lifestyle</a></li>
+										<li><a href="#"><i class="icon-check"></i> Fashion</a></li>
+										<li><a href="#"><i class="icon-check"></i> Health</a></li>
+									</ul>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
 <script src="{% static 'eg/js/jquery-3.1.1.min.js' %}"></script>
 <script>
@@ -40,7 +71,7 @@
            $('#word').val(data.present.verb);
            $('#present').val(data.present.verb);
            $("#word").attr('name', 'present');
-           $('#test').val(data.present.verb);
+           $('#test').text(data.present.verb);
 
         }
       });
@@ -58,7 +89,7 @@
 
            $('#word').val(data.past.verb);
            $("#word").attr('name', 'past');
-           $('#test').val(data.past.verb);
+           $('#test').text(data.past.verb);
 
         }
       });
@@ -76,7 +107,7 @@
 
            $('#word').val(data.past_participle.verb);
            $("#word").attr('name', 'past_participle');
-           $('#test').val(data.past_participle.verb);
+           $('#test').text(data.past_participle.verb);
 
         }
       });
@@ -96,7 +127,7 @@
 
            $('#word').val(data.sentence);
            $("#word").attr('name', 'sentence');
-           $('#test').val(data.sentence);
+           $('#test').text(data.sentence);
 
            sentence_number--;
 
@@ -184,3 +215,4 @@
 </script>
 
 </html>
+{% endblock main %}
