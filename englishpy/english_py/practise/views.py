@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
 from django.shortcuts import render
 
-def searcher(request, template_name='searcher.html'):
+def base(request, template_name='practise/base.html'):
     return render(request, template_name)

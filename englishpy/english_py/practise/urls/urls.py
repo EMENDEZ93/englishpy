@@ -10,8 +10,17 @@ from .reload.views_urls import urlpatterns as reload_views_urls
 
 from .load_topic.views_urls import urlpatterns as load_topic_views_urls
 
+from ..views import base
 
-urlpatterns = [] + \
+urlpatterns = [
+
+       url(
+           regex=r'^$',
+           view=base,
+           name='base'
+       ),
+
+    ] + \
     review_phrasal_views_urls + \
     review__review_phrasal_views_urls + \
     review_views_urls + \
